@@ -6,39 +6,279 @@
   "codigomaquina": 897,
   "dvrs": [
     {
-    "cliente": "9189",
-    "cameras": [
-      { "name": "Camera 1", "ip": "192.167.100.149", "porta": 80, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Camera 1" },
-      { "name": "Camera 3", "ip": "192.167.100.149", "porta": 80, "canal": "301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 2, "complemento": "Camera 3" },
-      { "name": "Camera 5", "ip": "192.167.100.149", "porta": 80, "canal": "501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 3, "complemento": "Camera 5" },
-      { "name": "Camera 7", "ip": "192.167.100.149", "porta": 80, "canal": "701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 4, "complemento": "Camera 7" },
-      { "name": "Camera 9", "ip": "192.167.100.149", "porta": 80, "canal": "901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 5, "complemento": "Camera 9" },
-      { "name": "Camera 11", "ip": "192.167.100.149", "porta": 80, "canal": "1101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 6, "complemento": "Camera 11" },
-      { "name": "Camera 13", "ip": "192.167.100.149", "porta": 80, "canal": "1301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 7, "complemento": "Camera 13" },
-      { "name": "Camera 15", "ip": "192.167.100.149", "porta": 80, "canal": "1501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 8, "complemento": "Camera 15" },
-      { "name": "Camera 17", "ip": "192.167.100.149", "porta": 80, "canal": "1701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 9, "complemento": "Camera 17" },
-      { "name": "Camera 19", "ip": "192.167.100.149", "porta": 80, "canal": "1901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 10, "complemento": "Camera 19" },
-      { "name": "Camera 21", "ip": "192.167.100.149", "porta": 80, "canal": "2101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 11, "complemento": "Camera 21" },
-      { "name": "Camera 22", "ip": "192.167.100.149", "porta": 80, "canal": "2201", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 13, "complemento": "Camera 23" },
-      { "name": "Camera 23", "ip": "192.167.100.149", "porta": 80, "canal": "2301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 12, "complemento": "Camera 25" },
-      { "name": "Camera 24", "ip": "192.167.100.149", "porta": 80, "canal": "2401", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 14, "complemento": "Camera 27" },
-      { "name": "Camera 25", "ip": "192.167.100.149", "porta": 80, "canal": "2501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 15, "complemento": "Camera 29" },
-      { "name": "Camera 26", "ip": "192.167.100.149", "porta": 80, "canal": "2601", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 16, "complemento": "Camera 31" }
-    ]
- },{
-    "cliente": "9190",
-    "particao": "01",
-    "cameras": [
-      { "name": "Camera 11", "ip": "192.167.100.150", "porta": 80, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 13, "complemento": "Camera 1" },
-      { "name": "Camera 12", "ip": "192.167.100.150", "porta": 80, "canal": "301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 14, "complemento": "Camera 3" },
-      { "name": "Camera 13", "ip": "192.167.100.150", "porta": 80, "canal": "501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 15, "complemento": "Camera 5" },
-      { "name": "Camera 14", "ip": "192.167.100.150", "porta": 80, "canal": "701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 16, "complemento": "Camera 7" },
-      { "name": "Camera 15", "ip": "192.167.100.150", "porta": 80, "canal": "901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 17, "complemento": "Camera 9" },
-      { "name": "Camera 16", "ip": "192.167.100.150", "porta": 80, "canal": "1101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 18, "complemento": "Camera 11" },
-      { "name": "Camera 17", "ip": "192.167.100.150", "porta": 80, "canal": "1301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 19, "complemento": "Camera 13" },
-      { "name": "Camera 18", "ip": "192.167.100.150", "porta": 80, "canal": "1501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 20, "complemento": "Camera 15" }
-    
-    ]
+      "cliente": "9189",
+      "cameras": [
+        {
+          "name": "Camera 1",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 1"
+        },
+        {
+          "name": "Camera 3",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "Camera 3"
+        },
+        {
+          "name": "Camera 5",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "Camera 5"
+        },
+        {
+          "name": "Camera 7",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "Camera 7"
+        },
+        {
+          "name": "Camera 9",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "Camera 9"
+        },
+        {
+          "name": "Camera 11",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "Camera 11"
+        },
+        {
+          "name": "Camera 13",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "Camera 13"
+        },
+        {
+          "name": "Camera 15",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "Camera 15"
+        },
+        {
+          "name": "Camera 17",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "Camera 17"
+        },
+        {
+          "name": "Camera 19",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "Camera 19"
+        },
+        {
+          "name": "Camera 21",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "Camera 21"
+        },
+        {
+          "name": "Camera 22",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "2201",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 13,
+          "complemento": "Camera 23"
+        },
+        {
+          "name": "Camera 23",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "2301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 12,
+          "complemento": "Camera 25"
+        },
+        {
+          "name": "Camera 24",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "2401",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 14,
+          "complemento": "Camera 27"
+        },
+        {
+          "name": "Camera 25",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "2501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 15,
+          "complemento": "Camera 29"
+        },
+        {
+          "name": "Camera 26",
+          "ip": "192.167.100.149",
+          "porta": 80,
+          "canal": "2601",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 16,
+          "complemento": "Camera 31"
+        }
+      ]
+    },
+    {
+      "cliente": "9190",
+      "particao": "01",
+      "cameras": [
+        {
+          "name": "Camera 11",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 13,
+          "complemento": "Camera 1"
+        },
+        {
+          "name": "Camera 12",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 14,
+          "complemento": "Camera 3"
+        },
+        {
+          "name": "Camera 13",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 15,
+          "complemento": "Camera 5"
+        },
+        {
+          "name": "Camera 14",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 16,
+          "complemento": "Camera 7"
+        },
+        {
+          "name": "Camera 15",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 17,
+          "complemento": "Camera 9"
+        },
+        {
+          "name": "Camera 16",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 18,
+          "complemento": "Camera 11"
+        },
+        {
+          "name": "Camera 17",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 19,
+          "complemento": "Camera 13"
+        },
+        {
+          "name": "Camera 18",
+          "ip": "192.167.100.150",
+          "porta": 80,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 20,
+          "complemento": "Camera 15"
+        }
+      ]
     }
-]
+  ]
 }

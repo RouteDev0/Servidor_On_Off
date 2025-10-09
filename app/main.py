@@ -127,7 +127,8 @@ def status():
 def status_condominio(condominio):
     status_atual = verification_service.get_status_atual()
     if condominio in status_atual:
-        return jsonify(status_atual[condominio])
+        # Retorna apenas as câmeras para manter compatibilidade
+        return jsonify(status_atual[condominio].get("cameras", []))
     else:
         return jsonify({"error": "Condomínio não encontrado"}), 404
 

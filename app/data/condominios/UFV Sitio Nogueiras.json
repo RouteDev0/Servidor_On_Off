@@ -4,38 +4,312 @@
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
-  "dvrs" :[{
-  "cliente": "9186",
-  "cameras": [
-    { "name": "Termica-Camera 1", "ip": "192.167.1.112", "porta": 59089, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Termica-Camera 1-DVR01" },
-    { "name": "Termica-Camera 3", "ip": "192.168.1.112", "porta": 59089, "canal": "301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 2, "complemento": "Termica-Camera 3" },
-    { "name": "Termica-Camera 5", "ip": "192.168.1.112", "porta": 59089, "canal": "501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 3, "complemento": "Termica-Camera 5" },
-    { "name": "Termica-Camera 7", "ip": "192.168.1.112", "porta": 59089, "canal": "701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 4, "complemento": "Termica-Camera 7" },
-    { "name": "Termica-Camera 9", "ip": "192.168.1.112", "porta": 59089, "canal": "901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 5, "complemento": "Termica-Camera 9" },
-    { "name": "Termica-Camera 11", "ip": "192.168.1.112", "porta": 59089, "canal": "1101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 6, "complemento": "Termica-Camera 11" },
-    { "name": "Termica-Camera 13", "ip": "192.168.1.112", "porta": 59089, "canal": "1301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 7, "complemento": "Termica-Camera 13" },
-    { "name": "Termica-Camera 15", "ip": "192.168.1.112", "porta": 59089, "canal": "1501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 8, "complemento": "Termica-Camera 15" },
-    { "name": "Termica-Camera 17", "ip": "192.168.1.112", "porta": 59089, "canal": "1701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 9, "complemento": "Termica-Camera 17" },
-    { "name": "Termica-Camera 19", "ip": "192.168.1.112", "porta": 59089, "canal": "1901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 10, "complemento": "Termica-Camera 19" },
-    { "name": "Termica-Camera 21", "ip": "192.168.1.112", "porta": 59089, "canal": "2101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 11, "complemento": "Termica-Camera 21" },
-    { "name": "Termica-Camera 23", "ip": "192.168.1.112", "porta": 59089, "canal": "2301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 12, "complemento": "Termica-Camera 23" },
-    { "name": "Termica-Camera 25", "ip": "192.168.1.112", "porta": 59089, "canal": "2501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 13, "complemento": "Termica-Camera 25" },
-    { "name": "Termica-Camera 27", "ip": "192.168.1.112", "porta": 59089, "canal": "2701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 14, "complemento": "Termica-Camera 27" },
-    { "name": "Termica-Camera 29", "ip": "192.168.1.112", "porta": 59089, "canal": "2901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 15, "complemento": "Termica-Camera 29" },
-    { "name": "Termica-Camera 31", "ip": "192.168.1.112", "porta": 59089, "canal": "3101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 16, "complemento": "Termica-Camera 31" }
-  ]},{
-    "cameras": [
-      { "name": "Termica-Camera 1", "ip": "192.168.1.112", "porta": 59090, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Termica-Camera 1" },
-      { "name": "Termica-Camera 3", "ip": "192.168.1.112", "porta": 59090, "canal": "301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 2, "complemento": "Termica-Camera 3" },
-      { "name": "Termica-Camera 5", "ip": "192.168.1.112", "porta": 59090, "canal": "501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 3, "complemento": "Termica-Camera 5" },
-      { "name": "Termica-Camera 7", "ip": "192.168.1.112", "porta": 59090, "canal": "701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 4, "complemento": "Termica-Camera 7" },
-      { "name": "Termica-Camera 9", "ip": "192.168.1.112", "porta": 59090, "canal": "901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 5, "complemento": "Termica-Camera 9" },
-      { "name": "Termica-Camera 11", "ip": "192.168.1.112", "porta": 59090, "canal": "1101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 6, "complemento": "Termica-Camera 11" },
-      { "name": "Termica-Camera 13", "ip": "192.168.1.112", "porta": 59090, "canal": "1301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 7, "complemento": "Termica-Camera 13" },
-      { "name": "Speed-Camera 01", "ip": "192.168.1.112", "porta": 59090, "canal": "1501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 8, "complemento": "Speed-Camera 01" },
-      { "name": "Speed-Camera 02", "ip": "192.168.1.112", "porta": 59090, "canal": "1701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 9, "complemento": "Speed-Camera 02" },
-      { "name": "Bullet-Portão", "ip": "192.168.1.112", "porta": 59090, "canal": "1901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 10, "complemento": "Bullet-Portão" },
-      { "name": "MD O&M", "ip": "192.168.1.112", "porta": 59090, "canal": "2001", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 11, "complemento": "MD O&M" }
-    ]
-  }]
+  "dvrs": [
+    {
+      "cliente": "9186",
+      "cameras": [
+        {
+          "name": "Termica-Camera 1",
+          "ip": "192.167.1.112",
+          "porta": 59089,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Termica-Camera 1-DVR01"
+        },
+        {
+          "name": "Termica-Camera 3",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "Termica-Camera 3"
+        },
+        {
+          "name": "Termica-Camera 5",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "Termica-Camera 5"
+        },
+        {
+          "name": "Termica-Camera 7",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "Termica-Camera 7"
+        },
+        {
+          "name": "Termica-Camera 9",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "Termica-Camera 9"
+        },
+        {
+          "name": "Termica-Camera 11",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "Termica-Camera 11"
+        },
+        {
+          "name": "Termica-Camera 13",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "Termica-Camera 13"
+        },
+        {
+          "name": "Termica-Camera 15",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "Termica-Camera 15"
+        },
+        {
+          "name": "Termica-Camera 17",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "Termica-Camera 17"
+        },
+        {
+          "name": "Termica-Camera 19",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "Termica-Camera 19"
+        },
+        {
+          "name": "Termica-Camera 21",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "Termica-Camera 21"
+        },
+        {
+          "name": "Termica-Camera 23",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "2301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 12,
+          "complemento": "Termica-Camera 23"
+        },
+        {
+          "name": "Termica-Camera 25",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "2501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 13,
+          "complemento": "Termica-Camera 25"
+        },
+        {
+          "name": "Termica-Camera 27",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "2701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 14,
+          "complemento": "Termica-Camera 27"
+        },
+        {
+          "name": "Termica-Camera 29",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "2901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 15,
+          "complemento": "Termica-Camera 29"
+        },
+        {
+          "name": "Termica-Camera 31",
+          "ip": "192.168.1.112",
+          "porta": 59089,
+          "canal": "3101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 16,
+          "complemento": "Termica-Camera 31"
+        }
+      ]
+    },
+    {
+      "cameras": [
+        {
+          "name": "Termica-Camera 1",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Termica-Camera 1"
+        },
+        {
+          "name": "Termica-Camera 3",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "Termica-Camera 3"
+        },
+        {
+          "name": "Termica-Camera 5",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "Termica-Camera 5"
+        },
+        {
+          "name": "Termica-Camera 7",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "Termica-Camera 7"
+        },
+        {
+          "name": "Termica-Camera 9",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "Termica-Camera 9"
+        },
+        {
+          "name": "Termica-Camera 11",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "Termica-Camera 11"
+        },
+        {
+          "name": "Termica-Camera 13",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "Termica-Camera 13"
+        },
+        {
+          "name": "Speed-Camera 01",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "Speed-Camera 01"
+        },
+        {
+          "name": "Speed-Camera 02",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "Speed-Camera 02"
+        },
+        {
+          "name": "Bullet-Portão",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "Bullet-Portão"
+        },
+        {
+          "name": "MD O&M",
+          "ip": "192.168.1.112",
+          "porta": 59090,
+          "canal": "2001",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "MD O&M"
+        }
+      ]
+    }
+  ]
 }
