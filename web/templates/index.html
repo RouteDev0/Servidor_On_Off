@@ -24,6 +24,25 @@
         </div>
       </header>
       <main>
+        <!-- Filtros no topo direito -->
+        <div class="filters-container">
+          <div class="filter-group">
+            <label for="status-filter">Status:</label>
+            <select id="status-filter">
+              <option value="offline">Apenas Offline</option>
+              <option value="all">Todos</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="type-filter">Tipo:</label>
+            <select id="type-filter">
+              <option value="all">Todos</option>
+              <option value="3">Usinas</option>
+              <option value="4">Corporativo</option>
+            </select>
+          </div>
+        </div>
+
         <div id="resumo-geral" class="resumo-geral">
           <span class="on"
             ><strong id="total-on">0</strong> câmeras online</span
@@ -33,9 +52,11 @@
             ><strong id="total-off">0</strong> câmeras offline</span
           >
         </div>
+
         <div class="chart-container">
           <div id="grafico-total"></div>
         </div>
+
         <div id="container-condominios" class="loading">
           🔄 Carregando status das câmeras...
         </div>
