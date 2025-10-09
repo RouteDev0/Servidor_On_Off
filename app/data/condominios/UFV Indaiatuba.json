@@ -1,0 +1,43 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvrs": [
+    {
+      "cliente": "9183",
+      "porta": 80,
+      "cameras": [
+        { "name": "Bullet 01 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Bullet 01 Optica" },
+        { "name": "Bullet 02 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 2, "complemento": "Bullet 02 Optica" },
+        { "name": "Bullet 03 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 3, "complemento": "Bullet 03 Optica" },
+        { "name": "Bullet 04 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 4, "complemento": "Bullet 04 Optica" },
+        { "name": "Bullet 05 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 5, "complemento": "Bullet 05 Optica" },
+        { "name": "Bullet 06 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "1101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 6, "complemento": "Bullet 06 Optica" },
+        { "name": "Bullet 07 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "1301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 7, "complemento": "Bullet 07 Optica" },
+        { "name": "Bullet 08 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "1501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 8, "complemento": "Bullet 08 Optica" },
+        { "name": "Bullet 09 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "1701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 9, "complemento": "Bullet 09 Optica" },
+        { "name": "Bullet 10 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "1901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 10, "complemento": "Bullet 10 Optica" },
+        { "name": "Bullet 11 Optica", "ip": "192.168.1.90", "porta": 80, "canal": "2101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 11, "complemento": "Bullet 11 Optica" },
+        { "name": "INDAIATUBA - PTZ 01", "ip": "192.168.1.90", "porta": 80, "canal": "2301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 12, "complemento": "INDAIATUBA - PTZ 01" },
+        { "name": "INDAIATUBA - PTZ 02", "ip": "192.168.1.90", "porta": 80, "canal": "2501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 13, "complemento": "INDAIATUBA - PTZ 02" },
+        { "name": "INDAIATUBA O&M", "ip": "192.168.1.90", "porta": 80, "canal": "2701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 14, "complemento": "INDAIATUBA O&M" }
+      ]
+    },
+    {
+      "cliente": "9184",
+      "porta": 80,
+      "cameras": [
+        { "name": "Bullet 12 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Bullet 12 Optica" },
+        { "name": "Bullet 13 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 2, "complemento": "Bullet 13 Optica" },
+        { "name": "Bullet 14 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 3, "complemento": "Bullet 14 Optica" },
+        { "name": "Bullet 15 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "701", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 4, "complemento": "Bullet 15 Optica" },
+        { "name": "Bullet 16 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "901", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 5, "complemento": "Bullet 16 Optica" },
+        { "name": "Bullet 17 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "1101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 6, "complemento": "Bullet 17 Optica" },
+        { "name": "Bullet 18 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "1301", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 7, "complemento": "Bullet 18 Optica" },
+        { "name": "Bullet 19 Optica", "ip": "192.168.1.120", "porta": 80, "canal": "1501", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 8, "complemento": "Bullet 19 Optica" }
+      ]
+    }
+  ]
+}

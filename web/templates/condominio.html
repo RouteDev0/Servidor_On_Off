@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#offline-cameras">Ir direto para câmeras offline</a>
+  <div id="content">
+    <header class="header-content">
+      <img src="/static/images/logo.png" alt="Logo" class="logo">
+  <h1 class="titulo">Status {{ nome_condominio }}</h1>
+      <div class="profile-container">
+        <div class="profile-ball" id="profile-ball" title="Usuário logado">
+          <span class="profile-initial">{{ session['usuario'][0]|upper }}</span>
+        </div>
+        <div class="profile-menu" id="profile-menu">
+          <span class="profile-user">{{ session['usuario'] }}</span>
+          <a href="{{ url_for('logout') }}" class="logout-btn">Sair</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="chart-container">
+        <canvas id="grafico-condominio"></canvas>
+      </div>
+
+      <div id="offline-cameras" class="offline-cameras" aria-live="polite" aria-label="Lista de câmeras offline"></div>
+
+      <div id="container-condominio" class="loading" aria-live="polite">
+        🔄 Carregando status das câmeras...
+      </div>
+    </main>
+
+    <footer>
+      Atualização automática a cada 10 minutos
+    </footer>
+  </div>
+
+  <script>
+    // Mostra/esconde menu do perfil
+    document.addEventListener("DOMContentLoaded", function() {
+      const ball = document.getElementById("profile-ball");
+      const menu = document.getElementById("profile-menu");
+      document.addEventListener("click", function(e) {
+        if (ball.contains(e.target)) {
+          menu.classList.toggle("show");
+        } else if (!menu.contains(e.target)) {
+          menu.classList.remove("show");
+        }
+      });
+    });
+  </script>
+  <script src="/static/js/condominio.js"></script>
+</body>
+</html>
+         

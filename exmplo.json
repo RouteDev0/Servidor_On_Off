@@ -1,0 +1,28 @@
+{
+ "particao": "01",
+  "empresa": 4,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvrs": [
+    {
+      "ip": "dvr 01 - ip ",
+      "porta": 50109,
+      "cliente" : "9194",
+      "cameras": [
+        { "name": "Bullet 01 Optica", "ip": "172.16.0.117", "porta": 50109, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Bullet 01 Optica" },
+
+        { "name": "Bullet 02 Optica", "ip": "172.16.0.117", "porta": 50109, "canal": "201", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Bullet 01 Optica" }
+
+        ]
+
+    },{
+      "ip": "dvr 02 - ip ",
+      "porta": 50109,
+      "cliente" : "9195",
+      "cameras": [
+        { "name": "Bullet 01 Optica", "ip": "172.16.0.117", "porta": 50109, "canal": "101", "usuario": "admin", "senha": "flt030825", "identificacao": "E", "setor": 1, "complemento": "Bullet 01 Optica" }
+        ]
+    }
+]
+}

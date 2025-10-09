@@ -1,0 +1,41 @@
+"""
+Módulo responsável pelo serviço de condomínios
+"""
+import os
+from typing import Dict, Any, Optional
+from ..utils.file_utils import FileUtils
+from ..core.config_manager import ConfigManager
+from ..services.verification_service import VerificationService
+
+class CondominioService:
+	"""Classe responsável por gerenciar condomínios"""
+	
+	def __init__(self, verification_service: VerificationService):
+		self.verification_service = verification_service
+	
+	def processar_condominio(self, arquivo: str, pasta_condominios: str) -> bool:
+		"""Processa um condomínio individual - usado para paralelização"""
+		caminho = os.path.join(pasta_condominios, arquivo)
+		try:
+			data = FileUtils.carregar_cameras(caminho)
+			# Suporte a estrutura antiga (cameras) e nova (dvrs)
+			cameras = []
+			if "dvrs" in data:
+				for dvr in data["dvrs"]:
+					cameras.extend(dvr.get("cameras", []))
+			else:
+				cameras = data.get("cameras", [])
+			# usa exatamente o nome do arquivo JSON (sem extensão) como nome do condomínio
+			nome_condominio = os.path.splitext(arquivo)[0]
+			# Extrai configuração global (nova estrutura) ou usa None (estrutura antiga)
+			config_global = ConfigManager.extrair_config_global(data)
+			self.verification_service.verificar_cameras(cameras, nome_condominio, config_global)
+			return True
+		except Exception as e:
+			print(f"[ERRO] Falha ao processar {arquivo}: {e}")
+			return False
+	
+	def obter_pasta_condominios(self) -> str:
+		"""Obtém o caminho da pasta de condomínios"""
+		from app.config import Config
+		return Config.CONDOMINIOS_DIR
