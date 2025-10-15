@@ -1,0 +1,21 @@
+{
+  "cliente": "9490",
+  "particao": "01",
+  "empresa": 4,
+  "ocorrencia": 960,
+  "codigoconjuntodeocorrencias": 7,
+  "cameras": [
+    {
+      "name": "CAM 01",
+      "ip": "201.69.32.233",
+      "porta": 10600,
+      "canal": "profile1",
+      "usuario": "admin",
+      "senha": "123456",
+      "identificacao": "CAM 01",
+      "codigomaquina": 1,
+      "setor": 1,
+      "complemento": "rtsp://admin:123456@201.69.32.233:10600/profile1"
+    }
+  ]
+}
