@@ -17,6 +17,7 @@
           "canal": "101",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 1,
           "complemento": "Bullet 01"
         },
         {
@@ -26,6 +27,7 @@
           "canal": "201",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 2,
           "complemento": "Bullet 02"
         },
         {
@@ -35,6 +37,7 @@
           "canal": "301",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 3,
           "complemento": "Bullet 03"
         },
         {
@@ -44,6 +47,7 @@
           "canal": "401",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 4,
           "complemento": "Bullet 04"
         },
         {
@@ -53,6 +57,7 @@
           "canal": "501",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 5,
           "complemento": "Bullet 05"
         },
         {
@@ -62,6 +67,7 @@
           "canal": "601",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 6,
           "complemento": "Bullet 06"
         },
         {
@@ -71,6 +77,7 @@
           "canal": "701",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 7,
           "complemento": "Bullet 07"
         },
         {
@@ -80,51 +87,57 @@
           "canal": "801",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 8,
           "complemento": "Bullet 08"
         },
         {
           "name": "Bullet 09",
           "ip": "192.168.0.3",
           "porta": 59150,
-          "canal": "901",
+          "canal": "1401",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 9,
           "complemento": "Bullet 09"
         },
         {
           "name": "Bullet 10",
           "ip": "192.168.0.3",
           "porta": 59150,
-          "canal": "1001",
+          "canal": "1101",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 10,
           "complemento": "Bullet 10"
         },
         {
           "name": "Bullet 11",
           "ip": "192.168.0.3",
           "porta": 59150,
-          "canal": "1101",
+          "canal": "901",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 11,
           "complemento": "Bullet 11"
         },
         {
           "name": "Bullet 12",
           "ip": "192.168.0.3",
           "porta": 59150,
-          "canal": "1201",
+          "canal": "1001",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 12,
           "complemento": "Bullet 12"
         },
         {
-          "name": "Bullet 13",
+          "name": "Bullet Portao",
           "ip": "192.168.0.3",
           "porta": 59150,
           "canal": "1301",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 14,
           "complemento": "Bullet Portao"
         },
         {
@@ -134,6 +147,7 @@
           "canal": "1501",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 13,
           "complemento": "PTZ"
         },
         {
@@ -143,6 +157,7 @@
           "canal": "1201",
           "usuario": "admin",
           "senha": "flt030825",
+          "setor": 15,
           "complemento": "MD O&M"
         }
       ]

@@ -4,7 +4,7 @@
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
-  "cliente": "9194",
+  "cliente": "9178",
   "dvrs": [
     {
       "ip": "10.200.3.150",
@@ -165,17 +165,6 @@
           "complemento": "BARRETOS - PTZ 01"
         },
         {
-          "name": "PAN 01 - BARRETOS",
-          "ip": "10.200.3.150",
-          "porta": 80,
-          "canal": "2801",
-          "usuario": "admin",
-          "senha": "flt030825",
-          "identificacao": "E",
-          "setor": 15,
-          "complemento": "PAN 01 - BARRETOS"
-        },
-        {
           "name": "BARRETOS - PTZ 02",
           "ip": "10.200.3.150",
           "porta": 80,
@@ -183,19 +172,8 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 16,
+          "setor": 15,
           "complemento": "BARRETOS - PTZ 02"
-        },
-        {
-          "name": "PAN 02 - BARRETOS",
-          "ip": "10.200.3.150",
-          "porta": 80,
-          "canal": "3001",
-          "usuario": "admin",
-          "senha": "flt030825",
-          "identificacao": "E",
-          "setor": 17,
-          "complemento": "PAN 02 - BARRETOS"
         },
         {
           "name": "Bullet Portao - BARRETOS",
@@ -205,7 +183,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 18,
+          "setor": 16,
           "complemento": "Bullet Portao - BARRETOS"
         },
         {
@@ -216,7 +194,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 19,
+          "setor": 17,
           "complemento": "MD O&M - BARRETOS"
         }
       ]

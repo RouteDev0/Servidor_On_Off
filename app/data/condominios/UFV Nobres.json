@@ -18,7 +18,7 @@
           "identificacao": "E",
           "setor": 1,
           "complemento": "DOM_01"
-        },    
+        },
         {
           "name": "Bullet_01",
           "ip": "200.81.48.34",
@@ -187,4 +187,4 @@
       ]
     }
   ]
-}  
+}

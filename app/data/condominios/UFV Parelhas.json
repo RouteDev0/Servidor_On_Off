@@ -4,9 +4,9 @@
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
+  "cliente": "9198",
   "dvrs": [
     {
-      "cliente": "9198",
       "cameras": [
         {
           "name": "Bullet 05 Optica",
@@ -16,7 +16,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 5,
           "complemento": "Bullet 05 Optica"
         },
         {
@@ -60,7 +60,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 5,
+          "setor": 7,
           "complemento": "Bullet 07 Optica"
         },
         {
@@ -71,7 +71,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 6,
+          "setor": 9,
           "complemento": "PTZ 01"
         },
         {
@@ -82,7 +82,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 7,
+          "setor": 1,
           "complemento": "Bullet 01 Optica"
         },
         {
@@ -104,7 +104,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 9,
+          "setor": 10,
           "complemento": "MD O&M"
         },
         {
@@ -115,7 +115,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 10,
+          "setor": 6,
           "complemento": "Bullet 06 Optica"
         }
       ]

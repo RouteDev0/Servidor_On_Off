@@ -4,7 +4,7 @@
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
-  "cliente": "9194",
+  "cliente": "9177",
   "dvrs": [
     {
       "ip": "10.200.5.90",
@@ -36,7 +36,7 @@
           "name": "Bullet 03 O - Matao 01",
           "ip": "10.200.5.90",
           "porta": 80,
-          "canal": "501",
+          "canal": "601",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
@@ -77,7 +77,7 @@
           "complemento": "Bullet 06 O - Matao 01"
         },
         {
-          "name": "IPCamera 13",
+          "name": "Bullet 07 O - Matao 01",
           "ip": "10.200.5.90",
           "porta": 80,
           "canal": "1301",
@@ -154,18 +154,18 @@
           "complemento": "Bullet 13 O - Matao 01"
         },
         {
-          "name": "IPCamera 27",
+          "name": "Bullet 14",
           "ip": "10.200.5.90",
           "porta": 80,
-          "canal": "2701",
+          "canal": "2801",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
           "setor": 14,
-          "complemento": "IPCamera 27"
+          "complemento": "Bullet 14 T - Matao 01"
         },
         {
-          "name": "Matao 01 - PTZ 01",
+          "name": "PTZ 01",
           "ip": "10.200.5.90",
           "porta": 80,
           "canal": "2901",
@@ -176,37 +176,15 @@
           "complemento": "Matao 01 - PTZ 01"
         },
         {
-          "name": "PAN 01 - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
-          "canal": "3001",
-          "usuario": "admin",
-          "senha": "flt030825",
-          "identificacao": "E",
-          "setor": 16,
-          "complemento": "PAN 01 - Matao 01"
-        },
-        {
-          "name": "Matao 01 - PTZ 02",
+          "name": "PTZ 02",
           "ip": "10.200.5.90",
           "porta": 80,
           "canal": "3101",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 17,
+          "setor": 16,
           "complemento": "Matao 01 - PTZ 02"
-        },
-        {
-          "name": "PAN 02 - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
-          "canal": "3201",
-          "usuario": "admin",
-          "senha": "flt030825",
-          "identificacao": "E",
-          "setor": 18,
-          "complemento": "PAN 02 - Matao 01"
         }
       ]
     }

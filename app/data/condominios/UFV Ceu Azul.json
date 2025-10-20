@@ -121,14 +121,36 @@
           "complemento": "Bullet 10"
         },
         {
-          "name": "Bullet Portao",
+          "name": "PTZ 01",
           "ip": "192.168.3.126",
           "porta": 59090,
-          "canal": "2001",
+          "canal": "2101",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
           "setor": 11,
+          "complemento": "PTZ 01"
+        },
+        {
+          "name": "DM O&M",
+          "ip": "192.168.3.126",
+          "porta": 59090,
+          "canal": "2301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 12,
+          "complemento": "DM O&M"
+        },
+        {
+          "name": "Bullet Portao",
+          "ip": "192.168.3.126",
+          "porta": 59090,
+          "canal": "2401",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 13,
           "complemento": "Bullet Portao"
         }
       ]

@@ -187,105 +187,106 @@
       ]
     },
     {
+      "cliente": "9187",
       "cameras": [
         {
-          "name": "Termica-Camera 1",
+          "name": "Bullet 17",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "101",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 1,
-          "complemento": "Termica-Camera 1"
+          "setor": 17,
+          "complemento": "Bullet 17"
         },
         {
-          "name": "Termica-Camera 3",
+          "name": "Bullet 18",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "301",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 2,
-          "complemento": "Termica-Camera 3"
+          "setor": 18,
+          "complemento": "Bullet 18"
         },
         {
-          "name": "Termica-Camera 5",
+          "name": "Bullet 19",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "501",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 3,
-          "complemento": "Termica-Camera 5"
+          "setor": 19,
+          "complemento": "Bullet 19"
         },
         {
-          "name": "Termica-Camera 7",
+          "name": "Bullet 20",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "701",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 4,
-          "complemento": "Termica-Camera 7"
+          "setor": 20,
+          "complemento": "Bullet 20"
         },
         {
-          "name": "Termica-Camera 9",
+          "name": "Bullet 21",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "901",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 5,
-          "complemento": "Termica-Camera 9"
+          "setor": 21,
+          "complemento": "Bullet 21"
         },
         {
-          "name": "Termica-Camera 11",
+          "name": "Bullet 22",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "1101",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 6,
-          "complemento": "Termica-Camera 11"
+          "setor": 22,
+          "complemento": "Bullet 22"
         },
         {
-          "name": "Termica-Camera 13",
+          "name": "Bullet 23",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "1301",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 7,
-          "complemento": "Termica-Camera 13"
+          "setor": 23,
+          "complemento": "Bullet 23"
         },
         {
-          "name": "Speed-Camera 01",
+          "name": "PTZ 01",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "1501",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 8,
-          "complemento": "Speed-Camera 01"
+          "setor": 24,
+          "complemento": "PTZ 01"
         },
         {
-          "name": "Speed-Camera 02",
+          "name": "PTZ 02",
           "ip": "192.168.1.112",
           "porta": 59090,
           "canal": "1701",
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 9,
-          "complemento": "Speed-Camera 02"
+          "setor": 25,
+          "complemento": "PTZ 02"
         },
         {
           "name": "Bullet-Portão",
@@ -295,7 +296,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 10,
+          "setor": 26,
           "complemento": "Bullet-Portão"
         },
         {
@@ -306,7 +307,7 @@
           "usuario": "admin",
           "senha": "flt030825",
           "identificacao": "E",
-          "setor": 11,
+          "setor": 27,
           "complemento": "MD O&M"
         }
       ]

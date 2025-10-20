@@ -4,11 +4,11 @@
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
+  "cliente": "9195",
   "dvrs": [
     {
       "ip": "192.168.1.185",
       "porta": 59110,
-      "cliente": "9195",
       "cameras": [
         {
           "name": "Bullet 01",
