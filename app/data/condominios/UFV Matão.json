@@ -14,6 +14,8 @@
           "name": "Bullet 01 O - Matao 01",
           "ip": "10.200.5.90",
           "porta": 80,
+
+          
           "canal": "101",
           "usuario": "admin",
           "senha": "flt030825",

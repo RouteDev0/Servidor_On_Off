@@ -10,7 +10,7 @@
       "cameras": [
         {
           "name": "Termica-Camera 1",
-          "ip": "192.167.1.112",
+          "ip": "192.168.1.112",
           "porta": 59089,
           "canal": "101",
           "usuario": "admin",
