@@ -30,14 +30,19 @@ class VerificationService:
         from requests.auth import HTTPDigestAuth
 
         nome = cam.get("name", "CAMERA")
-        ip = cam.get("ip")
-        porta = cam.get("porta", 80)
+        # Tenta obter IP e porta do nível da câmera, se não encontrar, usa do DVR/DV
+        ip = cam.get("ip") or cam.get(
+            "_dvr_ip"
+        )  # _dvr_ip será injetado pelo método verificar_cameras
+        porta = cam.get("porta") or cam.get(
+            "_dvr_porta", 80
+        )  # _dvr_porta será injetado pelo método verificar_cameras
         canal = cam.get("canal") or cam.get("channel") or "101"
         usuario = cam.get("usuario") or cam.get("user") or "admin"
         senha = cam.get("senha") or cam.get("password") or "admin"
 
         if not ip or not usuario or not senha:
-            print(f"[⚠️] {nome} não possui dados de conexão suficientes.")
+            print(f"[⚠️] {nome} não possui dados de conexão suficientes. IP: {ip}")
             return nome, "NO_CONFIG"
 
         # Verifica cache primeiro
@@ -146,6 +151,16 @@ class VerificationService:
         with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = []
             for cam in cameras:
+                # Se a câmera não tem IP próprio, injeta o IP e porta do DVR/DV
+                if not cam.get("ip") and "_dvr_ip" in cam:
+                    cam = cam.copy()  # Cria uma cópia para não modificar o original
+                cam["_dvr_ip"] = cam.get(
+                    "_dvr_ip"
+                )  # Mantém o IP do DVR se já estiver definido
+                cam["_dvr_porta"] = cam.get(
+                    "_dvr_porta"
+                )  # Mantém a porta do DVR se já estiver definida
+
                 futures.append(
                     executor.submit(
                         self.verificar_camera_individual,

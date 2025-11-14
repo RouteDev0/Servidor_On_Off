@@ -1,0 +1,366 @@
+{
+  "particao": "01",
+  "empresa": 4,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "cliente": "9023",
+      "cameras": [
+        {
+          "name": "D1 ENTRADA ARMAZEM",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ENTRADA ARMAZEM"
+        },
+        {
+          "name": "D2 IPCamera 02",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "201",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 02"
+        },
+        {
+          "name": "D3 IPCamera 03",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 03"
+        },
+        {
+          "name": "D4 SALA LIDER DA LIMPEZA",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "401",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SALA LIDER DA LIMPEZA"
+        },
+        {
+          "name": "D5 IPCamera 05",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 05"
+        },
+        {
+          "name": "D6 IPCamera 06",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "601",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 06"
+        },
+        {
+          "name": "D7 SALA DE ISCA BRASIL RISC",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SALA DE ISCA BRASIL RISC"
+        },
+        {
+          "name": "D8 IPCamera 08",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "801",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 08"
+        },
+        {
+          "name": "D9 IPCamera 09",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 09"
+        },
+        {
+          "name": "D10 Lateral Anhanguera",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1001",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Lateral Anhanguera"
+        },
+        {
+          "name": "D11 HALL TERREO PREDIO VS EXTERNO",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "HALL TERREO PREDIO VS EXTERNO"
+        },
+        {
+          "name": "D12 ACESSO ADM E CPD",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1201",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ACESSO ADM E CPD"
+        },
+        {
+          "name": "D13 AREA DE REVISTA INTERNA",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "AREA DE REVISTA INTERNA"
+        },
+        {
+          "name": "D14 IPCamera 14",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1401",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 14"
+        },
+        {
+          "name": "D15 IPCamera 15",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 15"
+        },
+        {
+          "name": "D16 IPCamera 16",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1601",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 16"
+        },
+        {
+          "name": "D17 IPCamera 17",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 17"
+        },
+        {
+          "name": "D18 IPCamera 18",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1801",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 18"
+        },
+        {
+          "name": "D19 ENTRADA ARMAZEM CAFE",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ENTRADA ARMAZEM CAFE"
+        },
+        {
+          "name": "D20 CANCELA SAIDA G-2",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2001",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "CANCELA SAIDA G-2"
+        },
+        {
+          "name": "D21 DIRETORIA AREA DO CAFE",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "DIRETORIA AREA DO CAFE"
+        },
+        {
+          "name": "D22 SALA G2 AGENDAMENTO",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2201",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SALA G2 AGENDAMENTO"
+        },
+        {
+          "name": "D23 IPCamera 23",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2301",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 23"
+        },
+        {
+          "name": "D24 ENTRADA DE FUNC. ARMAZEM",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2401",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ENTRADA DE FUNC. ARMAZEM"
+        },
+        {
+          "name": "D25 SALA DE SEGURANCA",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2501",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SALA DE SEGURANCA"
+        },
+        {
+          "name": "D26 ESCADA PORTA EMERGENCIA",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2601",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ESCADA PORTA EMERGENCIA"
+        },
+        {
+          "name": "D27 IPCamera 27",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2701",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 27"
+        },
+        {
+          "name": "D28 IPCamera 28",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2801",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 28"
+        },
+        {
+          "name": "D29 IPCamera 29",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "2901",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 29"
+        },
+        {
+          "name": "D30 RECICLAGEM",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "3001",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "RECICLAGEM"
+        },
+        {
+          "name": "D31 ADM MEZANINO OP",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "3101",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ADM MEZANINO OP"
+        },
+        {
+          "name": "D32 ACESSO ARMAZEM 02",
+          "ip": "189.90.7.115",
+          "porta": 10200,
+          "canal": "3201",
+          "usuario": "admin",
+          "senha": "Prime2393",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ACESSO ARMAZEM 02"
+        }
+      ]
+    }
+  ]
+}

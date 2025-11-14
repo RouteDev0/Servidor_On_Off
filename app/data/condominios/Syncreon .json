@@ -1,0 +1,286 @@
+{
+  "particao": "01",
+  "empresa": 4,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "179.125.68.97",
+      "porta": 8007,
+      "cliente": "10717",
+      "cameras": [
+        {
+          "name": "D17 Câmera 15",
+          "ip": "179.125.68.97",
+          "porta": 8007,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Câmera 15"
+        },
+        {
+          "name": "D18 Câmera 21",
+          "ip": "179.125.68.97",
+          "porta": 8007,
+          "canal": "1801",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Câmera 21"
+        },
+        {
+          "name": "D19 P. EMERGENCIA G.19",
+          "ip": "179.125.68.97",
+          "porta": 8007,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "P. EMERGENCIA G.19"
+        },
+        {
+          "name": "D20 IPcamera 23",
+          "ip": "179.125.68.97",
+          "porta": 8007,
+          "canal": "2001",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPcamera 23"
+        },
+        {
+          "name": "D21 Cage G19 2",
+          "ip": "179.125.68.97",
+          "porta": 8007,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Cage G19 2"
+        }
+      ]
+    },
+    {
+      "ip": "179.125.68.97",
+      "porta": 8002,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D01 F. DOCAS-1-3",
+          "ip": "179.125.68.97",
+          "porta": 8002,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "F. DOCAS-1-3"
+        },
+        {
+          "name": "D02 C. DOCAS-1-6",
+          "ip": "179.125.68.97",
+          "porta": 8002,
+          "canal": "201",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "C. DOCAS-1-6"
+        },
+        {
+          "name": "D03 F. DOCAS-4-6",
+          "ip": "179.125.68.97",
+          "porta": 8002,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "F. DOCAS-4-6"
+        },
+        {
+          "name": "D04 L. A. RECEBIMENTO-1",
+          "ip": "179.125.68.97",
+          "porta": 8002,
+          "canal": "401",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "L. A. RECEBIMENTO-1"
+        },
+        {
+          "name": "D05 C. DOCAS-07-12",
+          "ip": "179.125.68.97",
+          "porta": 8002,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "C. DOCAS-07-12"
+        },
+        {
+          "name": "D12 F. DOCAS-1-3",
+          "ip": "179.125.68.97",
+          "porta": 8002,
+          "canal": "1201",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "F. DOCAS-1-3"
+        }
+      ]
+    },
+    {
+      "ip": "179.125.68.97",
+      "porta": 8005,
+      "cliente": "10717",
+      "cameras": [
+        {
+          "name": "D06 Camera 17",
+          "ip": "179.125.68.97",
+          "porta": 8005,
+          "canal": "601",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 17"
+        },
+        {
+          "name": "D07 Camera 18",
+          "ip": "179.125.68.97",
+          "porta": 8005,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 18"
+        }
+      ]
+    },
+    {
+      "ip": "179.125.68.97",
+      "porta": 8006,
+      "cliente": "10717",
+      "cameras": [
+        {
+          "name": "D13 RECEPCAO",
+          "ip": "179.125.68.97",
+          "porta": 8006,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "RECEPCAO"
+        },
+        {
+          "name": "D14 CORREDOR PORTAL ENTRADA",
+          "ip": "179.125.68.97",
+          "porta": 8006,
+          "canal": "1401",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "CORREDOR PORTAL ENTRADA"
+        },
+        {
+          "name": "D15 PORTA ENTRADA RECEPCAO",
+          "ip": "179.125.68.97",
+          "porta": 8006,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PORTA ENTRADA RECEPCAO"
+        },
+        {
+          "name": "D16 MONITORAMENTO",
+          "ip": "179.125.68.97",
+          "porta": 8006,
+          "canal": "1601",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "MONITORAMENTO"
+        }
+      ]
+    },
+    {
+      "ip": "179.125.68.97",
+      "porta": 8009,
+      "cliente": "10717",
+      "cameras": [
+        {
+          "name": "D08 D6 CAMERA EX. DOCAS 13,14",
+          "ip": "179.125.68.97",
+          "porta": 8009,
+          "canal": "801",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "D6 CAMERA EX. DOCAS 13,14"
+        },
+        {
+          "name": "D09 D5 CAMERA TORNIQUITE EX.",
+          "ip": "179.125.68.97",
+          "porta": 8009,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "D5 CAMERA TORNIQUITE EX."
+        },
+        {
+          "name": "D10 IPcamera 26",
+          "ip": "179.125.68.97",
+          "porta": 8009,
+          "canal": "1001",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPcamera 26"
+        },
+        {
+          "name": "D11 Speed Dome IP",
+          "ip": "179.125.68.97",
+          "porta": 8009,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Speed Dome IP"
+        },
+        {
+          "name": "D21 Cage G19 2",
+          "ip": "179.125.68.97",
+          "porta": 8009,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "syncreon2026",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Cage G19 2"
+        }
+      ]
+    }
+  ]
+}
