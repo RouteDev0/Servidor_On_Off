@@ -1,0 +1,192 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.6.149",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "Camera 01",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 01"
+        },
+        {
+          "name": "Camera 02",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 02"
+        },
+        {
+          "name": "Camera 03",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 03"
+        },
+        {
+          "name": "Camera 04",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 04"
+        },
+        {
+          "name": "Camera 05",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 05"
+        },
+        {
+          "name": "Camera 06",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 06"
+        },
+        {
+          "name": "Camera 07",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 07"
+        },
+        {
+          "name": "Camera 08",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 08"
+        },
+        {
+          "name": "Camera 09",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 09"
+        },
+        {
+          "name": "Camera 10",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 10"
+        },
+        {
+          "name": "Camera 11",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 11"
+        },
+        {
+          "name": "Camera 12",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "2301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 12"
+        },
+        {
+          "name": "Camera 13",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "2501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 13"
+        },
+        {
+          "name": "Camera 14",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "2701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 14"
+        },
+        {
+          "name": "Camera 15",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "2901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 15"
+        },
+        {
+          "name": "Camera 16",
+          "ip": "10.200.6.149",
+          "porta": 80,
+          "canal": "3101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 16"
+        }
+      ]
+    }
+  ]
+}

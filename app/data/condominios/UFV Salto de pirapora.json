@@ -1,0 +1,181 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.67.110",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D1 ENTRADA O - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ENTRADA O - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D2 ENTRADA T - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "201",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ENTRADA T - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D3 FUNDOS OeM O - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FUNDOS OeM O - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D4 FUNDOS OeM T - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "401",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FUNDOS OeM T - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D5 SE O - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SE O - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D6 SE T - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "601",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SE T - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D7 FUNDOS ALM O - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FUNDOS ALM O - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D8 FUNDOS ALM T - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "801",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FUNDOS ALM T - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D9 FOCO PTZ 02 O - SALTO DE PIRAPOR",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FOCO PTZ 02 O - SALTO DE PIRAPOR"
+        },
+        {
+          "name": "D10 FOCO PTZ 02 T - SALTO DE PIRAPOR",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "1001",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FOCO PTZ 02 T - SALTO DE PIRAPOR"
+        },
+        {
+          "name": "D11 FOCO 2 PTZ 02 O - SALTO DE PIRAP",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "1101",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FOCO 2 PTZ 02 O - SALTO DE PIRAP"
+        },
+        {
+          "name": "D12 FOCO 2 PTZ 02 T - SALTO DE PIRAP",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "1201",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "FOCO 2 PTZ 02 T - SALTO DE PIRAP"
+        },
+        {
+          "name": "D13 PTZ 01 - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "1301",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 01 - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D14 PTZ 02 - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "1401",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 02 - SALTO DE PIRAPORA"
+        },
+        {
+          "name": "D15 OEM - SALTO DE PIRAPORA",
+          "ip": "10.200.67.110",
+          "porta": 80,
+          "canal": "1501",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "OEM - SALTO DE PIRAPORA"
+        }
+      ]
+    }
+  ]
+}

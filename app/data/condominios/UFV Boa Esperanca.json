@@ -1,0 +1,115 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.60.18",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D1 OeM EXT - BOA ESPERANCA",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "OeM EXT - BOA ESPERANCA"
+        },
+        {
+          "name": "D2 OeM INT - BOA ESPERANCA",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "201",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "OeM INT - BOA ESPERANCA"
+        },
+        {
+          "name": "D3 PORTAO - BOA ESPERANCA",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PORTAO - BOA ESPERANCA"
+        },
+        {
+          "name": "D4 PTZ 01 - BOA ESPERANCA",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "401",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 01 - BOA ESPERANCA"
+        },
+        {
+          "name": "D5 BULLET-02A",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "BULLET-02A"
+        },
+        {
+          "name": "D6 BULLET-03B",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "601",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "BULLET-03B"
+        },
+        {
+          "name": "D7 PTZ 02 - BOA ESPERANCA 02",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 02 - BOA ESPERANCA 02"
+        },
+        {
+          "name": "D8 PTZ 03 - BOA ESPERANCA 01",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "801",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 03 - BOA ESPERANCA 01"
+        },
+        {
+          "name": "D9 PTZ 04 - BOA ESPERANCA 02",
+          "ip": "10.200.60.18",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 04 - BOA ESPERANCA 02"
+        }
+      ]
+    }
+  ]
+}

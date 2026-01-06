@@ -1,0 +1,115 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.61.3",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D1 PTZ 02 - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 02 - CAXAMBU 01"
+        },
+        {
+          "name": "D2 ENTRADA - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "201",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ENTRADA - CAXAMBU 01"
+        },
+        {
+          "name": "D3 PTZ 04 - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 04 - CAXAMBU 01"
+        },
+        {
+          "name": "D4 PTZ 01 - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "401",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 01 - CAXAMBU 01"
+        },
+        {
+          "name": "D5 SE - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SE - CAXAMBU 01"
+        },
+        {
+          "name": "D6 OeM INT - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "601",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "OeM INT - CAXAMBU 01"
+        },
+        {
+          "name": "D7 PTZ 03 CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 03 CAXAMBU 01"
+        },
+        {
+          "name": "D8 PTZ 05 - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "801",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 05 - CAXAMBU 01"
+        },
+        {
+          "name": "D9 OeM EXT - CAXAMBU 01",
+          "ip": "10.200.61.3",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "OeM EXT - CAXAMBU 01"
+        }
+      ]
+    }
+  ]
+}

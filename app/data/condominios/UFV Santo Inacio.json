@@ -1,0 +1,104 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.56.3",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D1 SIN12-ENTRADA/OeM EXT.",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SIN12-ENTRADA/OeM EXT."
+        },
+        {
+          "name": "D2 PTZ 01 - SANTO ANTONIO",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "201",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 01 - SANTO ANTONIO"
+        },
+        {
+          "name": "D3 SIN12-SE",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SIN12-SE"
+        },
+        {
+          "name": "D4 SIN12-OeM INT.",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "401",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SIN12-OeM INT."
+        },
+        {
+          "name": "D5 PTZ 02 - SANTO INACIO",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 02 - SANTO INACIO"
+        },
+        {
+          "name": "D7 PTZ 03 - SANTO INACIO",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 03 - SANTO INACIO"
+        },
+        {
+          "name": "D8 SIN12-OPTICA01",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "801",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SIN12-OPTICA01"
+        },
+        {
+          "name": "D9 SIN12-THERMAL01",
+          "ip": "10.200.56.3",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SIN12-THERMAL01"
+        }
+      ]
+    }
+  ]
+}

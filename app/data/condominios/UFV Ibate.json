@@ -1,0 +1,155 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.53.31",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D1 PTZ 04 - IBATE 01",
+          "ip": "10.200.53.31",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 04 - IBATE 01"
+        },
+        {
+          "name": "D2 PTZ 05 - IBATE 01",
+          "ip": "10.200.53.31",
+          "porta": 80,
+          "canal": "201",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 05 - IBATE 01"
+        },
+        {
+          "name": "D3 PTZ 06 - IBATE 01",
+          "ip": "10.200.53.31",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 06 - IBATE 01"
+        },
+        {
+          "name": "D4 IPCamera 04",
+          "ip": "10.200.53.31",
+          "porta": 80,
+          "canal": "401",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 04"
+        },
+        {
+          "name": "D5 IPCamera 05",
+          "ip": "10.200.53.31",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 05"
+        },
+        {
+          "name": "D6 IPCamera 06",
+          "ip": "10.200.53.31",
+          "porta": 80,
+          "canal": "601",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 06"
+        }
+      ]
+    },
+    {
+      "ip": "10.200.54.30",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D1 IPCamera 01",
+          "ip": "10.200.54.30",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 01"
+        },
+        {
+          "name": "D2 IPCamera 02",
+          "ip": "10.200.54.30",
+          "porta": 80,
+          "canal": "201",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 02"
+        },
+        {
+          "name": "D3 IPCamera 03",
+          "ip": "10.200.54.30",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IPCamera 03"
+        },
+        {
+          "name": "D8 IBT02-PTZ04",
+          "ip": "10.200.54.30",
+          "porta": 80,
+          "canal": "801",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IBT02-PTZ04"
+        },
+        {
+          "name": "D9 IBT02-PTZ05",
+          "ip": "10.200.54.30",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IBT02-PTZ05"
+        },
+        {
+          "name": "D10 IBT02-PTZ06",
+          "ip": "10.200.54.30",
+          "porta": 80,
+          "canal": "1001",
+          "usuario": "thopen",
+          "senha": "Th0@2025",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IBT02-PTZ06"
+        }
+      ]
+    }
+  ]
+}

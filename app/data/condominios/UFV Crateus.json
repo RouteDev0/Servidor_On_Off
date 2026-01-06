@@ -1,0 +1,368 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "168.181.12.113",
+      "porta": 60024,
+      "cliente": "2041",
+      "cameras": [
+        {
+          "name": "D1 Bullet 01 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 01 O - CRATEUS"
+        },
+        {
+          "name": "D2 Bullet 01 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "201",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 01 T - CRATEUS"
+        },
+        {
+          "name": "D3 Bullet 02 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 02 O - CRATEUS"
+        },
+        {
+          "name": "D4 Bullet 02 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "401",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 02 T - CRATEUS"
+        },
+        {
+          "name": "D5 Bullet 03 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 03 O - CRATEUS"
+        },
+        {
+          "name": "D6 Bullet 03 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "601",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 03 T - CRATEUS"
+        },
+        {
+          "name": "D7 Bullet 04 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 04 O - CRATEUS"
+        },
+        {
+          "name": "D8 Bullet 04 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "801",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 04 T - CRATEUS"
+        },
+        {
+          "name": "D9 Bullet 05 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 05 O - CRATEUS"
+        },
+        {
+          "name": "D10 Bullet 05 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1001",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 05 T - CRATEUS"
+        },
+        {
+          "name": "D11 Bullet 06 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 06 O - CRATEUS"
+        },
+        {
+          "name": "D12 Bullet 06 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1201",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 06 T - CRATEUS"
+        },
+        {
+          "name": "D13 Bullet 07 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 07 O - CRATEUS"
+        },
+        {
+          "name": "D14 Bullet 07 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1401",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 07 T - CRATEUS"
+        },
+        {
+          "name": "D15 Bullet 08 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 08 O - CRATEUS"
+        },
+        {
+          "name": "D16 Bullet 08 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1601",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 08 T - CRATEUS"
+        },
+        {
+          "name": "D17 Bullet 09 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 09 O - CRATEUS"
+        },
+        {
+          "name": "D18 Bullet 09 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1801",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 09 T - CRATEUS"
+        },
+        {
+          "name": "D19 Bullet 10 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 10 O - CRATEUS"
+        },
+        {
+          "name": "D20 Bullet 10 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2001",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 10 T - CRATEUS"
+        },
+        {
+          "name": "D21 Bullet 11 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 11 O - CRATEUS"
+        },
+        {
+          "name": "D22 Bullet 11 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2201",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 11 T - CRATEUS"
+        },
+        {
+          "name": "D23 Bullet 12 O - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2301",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 12 O - CRATEUS"
+        },
+        {
+          "name": "D24 Bullet 12 T - CRATEUS",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2401",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet 12 T - CRATEUS"
+        },
+        {
+          "name": "D25 DOM_01",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2501",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "DOM_01"
+        },
+        {
+          "name": "D26 ABRIGO-3",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2601",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ABRIGO-3"
+        },
+        {
+          "name": "D27 ABRIGO-3",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2701",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ABRIGO-3"
+        },
+        {
+          "name": "D28 ABRIGO-4",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2801",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ABRIGO-4"
+        },
+        {
+          "name": "D29 ABRIGO-4",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "2901",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ABRIGO-4"
+        },
+        {
+          "name": "D30 ABRIGO-2",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "3001",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ABRIGO-2"
+        },
+        {
+          "name": "D31 ABRIGO-5",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "3101",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ABRIGO-5"
+        },
+        {
+          "name": "D32 ABRIGO-3",
+          "ip": "168.181.12.113",
+          "porta": 60024,
+          "canal": "3201",
+          "usuario": "admin",
+          "senha": "Pr0t3@nT3c",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "ABRIGO-3"
+        }
+      ]
+    }
+  ]
+}

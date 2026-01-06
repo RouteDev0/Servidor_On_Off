@@ -1,0 +1,302 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 968,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.68.200",
+      "porta": 80,
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "D1 Bullet H O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet H O - RODRIGUES 01"
+        },
+        {
+          "name": "D2 Bullet H T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "201",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet H T - RODRIGUES 01"
+        },
+        {
+          "name": "D3 Bullet L O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet L O - RODRIGUES 01"
+        },
+        {
+          "name": "D4 Bullet L T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "401",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet L T - RODRIGUES 01"
+        },
+        {
+          "name": "D5 Bullet C O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet C O - RODRIGUES 01"
+        },
+        {
+          "name": "D6 Bullet C T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "601",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet C T - RODRIGUES 01"
+        },
+        {
+          "name": "D7 Bullet D O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet D O - RODRIGUES 01"
+        },
+        {
+          "name": "D8 Bullet D T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "801",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet D T - RODRIGUES 01"
+        },
+        {
+          "name": "D9 Bullet E O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet E O - RODRIGUES 01"
+        },
+        {
+          "name": "D10 Bullet E T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1001",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet E T - RODRIGUES 01"
+        },
+        {
+          "name": "D11 Bullet F O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet F O - RODRIGUES 01"
+        },
+        {
+          "name": "D12 Bullet F T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1201",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet F T - RODRIGUES 01"
+        },
+        {
+          "name": "D13 Bullet G O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet G O - RODRIGUES 01"
+        },
+        {
+          "name": "D14 Bullet G T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1401",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet G T - RODRIGUES 01"
+        },
+        {
+          "name": "D15 Bullet I O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet I O - RODRIGUES 01"
+        },
+        {
+          "name": "D16 Bullet I T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1601",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet I T - RODRIGUES 01"
+        },
+        {
+          "name": "D17 Bullet J O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1701",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet J O - RODRIGUES 01"
+        },
+        {
+          "name": "D18 Bullet J T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1801",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet J T - RODRIGUES 01"
+        },
+        {
+          "name": "D19 Bullet K O - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "1901",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet K O - RODRIGUES 01"
+        },
+        {
+          "name": "D20 Bullet K T - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "2001",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet K T - RODRIGUES 01"
+        },
+        {
+          "name": "D21 PORTAO - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "2101",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PORTAO - RODRIGUES 01"
+        },
+        {
+          "name": "D22 OeM EXT - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "2201",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "OeM EXT - RODRIGUES 01"
+        },
+        {
+          "name": "D23 O&M - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "2301",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "O&M - RODRIGUES 01"
+        },
+        {
+          "name": "D24 Bullet B - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "2401",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Bullet B - RODRIGUES 01"
+        },
+        {
+          "name": "D25 PTZ B - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "2501",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ B - RODRIGUES 01"
+        },
+        {
+          "name": "D26 PTZ A - RODRIGUES 01",
+          "ip": "10.200.68.200",
+          "porta": 80,
+          "canal": "2601",
+          "usuario": "admin",
+          "senha": "flt030825",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ A - RODRIGUES 01"
+        }
+      ]
+    }
+  ]
+}
