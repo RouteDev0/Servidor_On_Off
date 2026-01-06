@@ -20,13 +20,23 @@ class Config:
     DEBUG = False
 
     # Configurações de verificação de câmeras
-    TIMEOUT_VERIFICACAO = 8  # segundos
+    TIMEOUT_VERIFICACAO = 12  # segundos
     TENTATIVAS_VERIFICACAO = 3
     INTERVALO_VERIFICACAO = 600  # segundos
 
-    # Configurações de workers
-    MAX_WORKERS_CAMERAS = 2  # Ajuste conforme necessário
-    MAX_WORKERS_CONDOMINIOS = 3
+    # Configurações de workers para escalabilidade
+    MAX_WORKERS_CAMERAS = 10  # Processa até 10 câmeras simultaneamente
+    MAX_WORKERS_CONDOMINIOS = 8  # Processa até 8 condomínios simultaneamente
+    DELAY_ENTRE_CAMERAS = 0.1  # segundos - delay entre submissões de câmeras
+    
+    # Configurações de retry e resiliência
+    TENTATIVAS_RETRY = 2  # Tentativas adicionais em caso de falha
+    RETRY_BACKOFF = 1  # segundos - delay entre retries
+    
+    # Configurações de pool de conexões HTTP
+    USE_CONNECTION_POOL = True  # Habilita pool de conexões reutilizáveis
+    CONNECTION_POOL_SIZE = 50  # Máximo de conexões no pool
+    CONNECTION_POOL_MAXSIZE = 50  # Conexões por host
 
     # Configurações de cache
     CACHE_DURATION = 30  # segundos
