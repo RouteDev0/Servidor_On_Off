@@ -124,6 +124,14 @@ function renderizarCondominios() {
 
     const div = document.createElement('div')
     div.classList.add('condominio')
+    
+    // Adiciona classe de alerta crítico se mais de 50% das câmeras estão offline
+    const totalCameras = cameras.length
+    const percentOffline = totalCameras > 0 ? (off / totalCameras) * 100 : 0
+    if (percentOffline > 50) {
+      div.classList.add('critical-alert')
+    }
+    
     div.addEventListener('click', () => {
       window.location.href = `/condominio/${encodeURIComponent(
         condominio

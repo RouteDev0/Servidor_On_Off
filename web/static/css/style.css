@@ -223,6 +223,35 @@ canvas {
   box-shadow: 0 6px 12px rgba(255, 215, 0, 0.2);
 }
 
+/* Alerta crítico - mais de 50% de câmeras offline */
+.condominio.critical-alert {
+  background: linear-gradient(145deg, #3a0000, #4d0000);
+  border: 2px solid #ff3333;
+  box-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+  animation: pulse-border 2s infinite;
+}
+
+.condominio.critical-alert:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 51, 51, 0.6);
+}
+
+.condominio.critical-alert h2 {
+  color: #ff6666;
+  border-bottom: 1px solid #ff3333;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: #ff3333;
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+  }
+  50% {
+    border-color: #ff6666;
+    box-shadow: 0 0 25px rgba(255, 51, 51, 0.8);
+  }
+}
+
   .condominio h2 {
     color: #ffffff;
     font-size: 14px;
