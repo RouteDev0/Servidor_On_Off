@@ -18,6 +18,26 @@ class VerificationService:
         self.cache_manager = CacheManager()
         self.ultimo_estado: Dict[str, bool] = {}
         self.status_atual: Dict[str, List[Dict[str, str]]] = {}
+        
+        # Pool de conexões HTTP reutilizável para melhor performance
+        self.http_session = None
+        if Config.USE_CONNECTION_POOL:
+            import requests
+            from requests.adapters import HTTPAdapter
+            from urllib3.util.retry import Retry
+            
+            self.http_session = requests.Session()
+            
+            # Configurar adapter com pool de conexões
+            adapter = HTTPAdapter(
+                pool_connections=Config.CONNECTION_POOL_SIZE,
+                pool_maxsize=Config.CONNECTION_POOL_MAXSIZE,
+                max_retries=0  # Trataremos retry manualmente
+            )
+            self.http_session.mount('http://', adapter)
+            self.http_session.mount('https://', adapter)
+            
+            print(f"[INFO] ✅ Pool de conexões HTTP ativado - {Config.CONNECTION_POOL_SIZE} conexões")
 
     def verificar_camera_individual(
         self,
@@ -72,14 +92,47 @@ class VerificationService:
 
         # Verificação real via snapshot API Hikvision
         url = f"http://{ip}:{porta}/ISAPI/Streaming/channels/{canal}/picture"
-        try:
-            resp = requests.get(url, auth=HTTPDigestAuth(usuario, senha), timeout=8)
-            online = resp.status_code == 200 and resp.headers.get(
-                "Content-Type", ""
-            ).startswith("image")
-        except Exception as e:
-            print(f"[ERRO] {nome}: {e}")
-            online = False
+        
+        # Retry com backoff exponencial
+        online = False
+        ultima_exception = None
+        
+        for tentativa in range(Config.TENTATIVAS_RETRY + 1):
+            try:
+                # Usa pool de conexões se disponível, senão cria nova requisição
+                if self.http_session:
+                    resp = self.http_session.get(
+                        url, 
+                        auth=HTTPDigestAuth(usuario, senha), 
+                        timeout=Config.TIMEOUT_VERIFICACAO
+                    )
+                else:
+                    import requests
+                    resp = requests.get(
+                        url, 
+                        auth=HTTPDigestAuth(usuario, senha), 
+                        timeout=Config.TIMEOUT_VERIFICACAO
+                    )
+                
+                online = resp.status_code == 200 and resp.headers.get(
+                    "Content-Type", ""
+                ).startswith("image")
+                
+                if online:
+                    break  # Sucesso, sai do loop de retry
+                    
+            except Exception as e:
+                ultima_exception = e
+                if tentativa < Config.TENTATIVAS_RETRY:
+                    # Backoff exponencial: 1s, 2s, 4s...
+                    backoff = Config.RETRY_BACKOFF * (2 ** tentativa)
+                    time.sleep(backoff)
+                continue
+        
+        # Log apenas se falhou após todas as tentativas
+        if not online and ultima_exception:
+            print(f"[ERRO] {nome}: {ultima_exception}")
+            
         status_str = "ON" if online else "OFF"
         print(f"📷 {nome} está {status_str}")
 
