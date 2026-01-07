@@ -7,6 +7,7 @@ import concurrent.futures
 from typing import Dict, Any, List, Optional
 from ..core.config_manager import ConfigManager
 from ..utils.cache_manager import CacheManager
+from ..utils.protocol_utils import ProtocolUtils
 from app.config import Config
 from app.alert import enviar_alerta
 
@@ -45,21 +46,36 @@ class VerificationService:
         nome_condominio: str,
         config_global: Optional[Dict[str, Any]] = None,
     ) -> tuple[str, str]:
-        """Verifica uma câmera individual usando snapshot da API Hikvision (HTTPDigestAuth)"""
+        """
+        Dispatcher que roteia para o método de verificação apropriado baseado no protocolo do DVR
+        
+        O protocolo é injetado pelo condominio_service como '_dvr_protocol'
+        """
+        protocol = ProtocolUtils.get_protocol_from_camera(cam)
+        
+        if protocol == "intelbras":
+            return self.verificar_camera_intelbras(cam, nome_condominio, config_global)
+        else:  # hikvision or default
+            return self.verificar_camera_hikvision(cam, nome_condominio, config_global)
+
+    def verificar_camera_hikvision(
+        self,
+        cam: Dict[str, Any],
+        nome_condominio: str,
+        config_global: Optional[Dict[str, Any]] = None,
+    ) -> tuple[str, str]:
+        """Verifica uma câmera Hikvision usando snapshot da API ISAPI (HTTPDigestAuth)"""
         import requests
         from requests.auth import HTTPDigestAuth
 
         nome = cam.get("name", "CAMERA")
-        # Tenta obter IP e porta do nível da câmera, se não encontrar, usa do DVR/DV
-        ip = cam.get("ip") or cam.get(
-            "_dvr_ip"
-        )  # _dvr_ip será injetado pelo método verificar_cameras
-        porta = cam.get("porta") or cam.get(
-            "_dvr_porta", 80
-        )  # _dvr_porta será injetado pelo método verificar_cameras
+        # Tenta obter IP e porta do nível da câmera, se não encontrar, usa do DVR
+        ip = cam.get("ip") or cam.get("_dvr_ip")
+        porta = cam.get("porta") or cam.get("_dvr_porta", 80)
         canal = cam.get("canal") or cam.get("channel") or "101"
-        usuario = cam.get("usuario") or cam.get("user") or "admin"
-        senha = cam.get("senha") or cam.get("password") or "admin"
+        # Credenciais sempre do DVR (fallback para camera se não injetado)
+        usuario = cam.get("_dvr_usuario") or cam.get("usuario") or "admin"
+        senha = cam.get("_dvr_senha") or cam.get("senha") or "admin"
 
         if not ip or not usuario or not senha:
             print(f"[⚠️] {nome} não possui dados de conexão suficientes. IP: {ip}")
@@ -135,6 +151,155 @@ class VerificationService:
             
         status_str = "ON" if online else "OFF"
         print(f"📷 {nome} está {status_str}")
+
+        # Atualiza cache
+        self.cache_manager.set_cached_result(chave_cache, online)
+
+        # Atualiza contador de falhas consecutivas
+        chave_falhas = f"{nome_condominio}_{nome}"
+        self.cache_manager.update_falhas_consecutivas(chave_falhas, online)
+
+        chave = f"{nome_condominio}_{nome}"
+        estado_anterior = self.ultimo_estado.get(chave)
+
+        # Envia alerta se voltou online
+        if estado_anterior is False and online:
+            cam_info = ConfigManager.construir_camera_info(
+                cam, nome_condominio, config_global
+            )
+            cam_info["ocorrencia"] = "941"
+            cam_info["complemento"] = f"{nome} voltou online"
+            enviar_alerta(cam_info, nome_condominio)
+
+        # Envia alerta se acabou de cair
+        if estado_anterior != online and not online:
+            cam_info = ConfigManager.construir_camera_info(
+                cam, nome_condominio, config_global
+            )
+            enviar_alerta(cam_info, nome_condominio)
+
+        self.ultimo_estado[chave] = online
+        return nome, status_str
+
+    def verificar_camera_intelbras(
+        self,
+        cam: Dict[str, Any],
+        nome_condominio: str,
+        config_global: Optional[Dict[str, Any]] = None,
+    ) -> tuple[str, str]:
+        """
+        Verifica uma câmera Intelbras usando snapshot CGI (HTTPDigestAuth)
+        
+        Protocolo CGI (Dahua): /cgi-bin/snapshot.cgi?channel={n}
+        Canais em formato numérico simples: 1, 2, 3, 4...
+        
+        Validação em cascata:
+        1. Conectividade TCP (porta configurada)
+        2. Autenticação Digest (Status 200)
+        3. Content-Type: image/jpeg
+        4. Content-Length > MIN_SIZE (detecta imagens estáticas "Sem Sinal")
+        """
+        import requests
+        from requests.auth import HTTPDigestAuth
+
+        nome = cam.get("name", "CAMERA")
+        ip = cam.get("ip") or cam.get("_dvr_ip")
+        porta = cam.get("porta") or cam.get("_dvr_porta", 80)
+        canal = cam.get("canal") or cam.get("channel") or "1"
+        # Credenciais sempre do DVR (fallback para camera se não injetado)
+        usuario = cam.get("_dvr_usuario") or cam.get("usuario") or "admin"
+        senha = cam.get("_dvr_senha") or cam.get("senha") or "admin"
+
+        if not ip or not usuario or not senha:
+            print(f"[⚠️] {nome} não possui dados de conexão suficientes. IP: {ip}")
+            return nome, "NO_CONFIG"
+
+        # Converte canal para formato Intelbras se necessário (101 -> 1)
+        canal = ProtocolUtils.convert_channel_to_intelbras(canal)
+
+        # Verifica cache primeiro
+        chave_cache = f"{nome_condominio}_{nome}_{ip}_{canal}_intelbras"
+        resultado_encontrado, resultado_cache = self.cache_manager.get_cached_result(
+            chave_cache
+        )
+        if resultado_encontrado:
+            status_str = "ON" if resultado_cache else "OFF"
+            print(f"📷 {nome} está {status_str} (cache) [Intelbras]")
+            chave = f"{nome_condominio}_{nome}"
+            estado_anterior = self.ultimo_estado.get(chave)
+            if estado_anterior is False and resultado_cache:
+                cam_info = ConfigManager.construir_camera_info(
+                    cam, nome_condominio, config_global
+                )
+                cam_info["ocorrencia"] = "941"
+                cam_info["complemento"] = f"{nome} voltou online"
+                enviar_alerta(cam_info, nome_condominio)
+            if estado_anterior != resultado_cache and not resultado_cache:
+                cam_info = ConfigManager.construir_camera_info(
+                    cam, nome_condominio, config_global
+                )
+                enviar_alerta(cam_info, nome_condominio)
+            self.ultimo_estado[chave] = resultado_cache
+            return nome, status_str
+
+        # Verificação real via snapshot CGI Intelbras
+        url = f"http://{ip}:{porta}/cgi-bin/snapshot.cgi?channel={canal}"
+        
+        # Retry com backoff exponencial
+        online = False
+        ultima_exception = None
+        content_length = 0
+        
+        for tentativa in range(Config.TENTATIVAS_RETRY + 1):
+            try:
+                # Usa pool de conexões se disponível
+                if self.http_session:
+                    resp = self.http_session.get(
+                        url, 
+                        auth=HTTPDigestAuth(usuario, senha), 
+                        timeout=Config.TIMEOUT_VERIFICACAO
+                    )
+                else:
+                    import requests
+                    resp = requests.get(
+                        url, 
+                        auth=HTTPDigestAuth(usuario, senha), 
+                        timeout=Config.TIMEOUT_VERIFICACAO
+                    )
+                
+                # Validação Intelbras:
+                # 1. Status 200 (autenticação OK)
+                # 2. Content-Type deve ser image/jpeg
+                # 3. Content-Length deve ser maior que MIN_SIZE (evita imagens "Sem Sinal")
+                content_type_ok = resp.headers.get("Content-Type", "").startswith("image")
+                content_length = int(resp.headers.get("Content-Length", 0))
+                size_ok = content_length >= Config.INTELBRAS_MIN_IMAGE_SIZE
+                
+                online = resp.status_code == 200 and content_type_ok and size_ok
+                
+                if online:
+                    break  # Sucesso, sai do loop de retry
+                elif resp.status_code == 200 and content_type_ok and not size_ok:
+                    # Imagem muito pequena - provavelmente "Sem Sinal"
+                    print(f"[⚠️] {nome}: Imagem muito pequena ({content_length} bytes) - possível 'Sem Sinal'")
+                    break  # Não continua tentando
+                    
+            except Exception as e:
+                ultima_exception = e
+                if tentativa < Config.TENTATIVAS_RETRY:
+                    # Backoff exponencial: 1s, 2s, 4s...
+                    backoff = Config.RETRY_BACKOFF * (2 ** tentativa)
+                    time.sleep(backoff)
+                continue
+        
+        # Log apenas se falhou após todas as tentativas
+        if not online and ultima_exception:
+            print(f"[ERRO] {nome} [Intelbras]: {ultima_exception}")
+        elif not online and content_length > 0:
+            print(f"[INFO] {nome} [Intelbras]: Offline ou sem sinal (image size: {content_length} bytes)")
+            
+        status_str = "ON" if online else "OFF"
+        print(f"📷 {nome} está {status_str} [Intelbras CGI]")
 
         # Atualiza cache
         self.cache_manager.set_cached_result(chave_cache, online)
