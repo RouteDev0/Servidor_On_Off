@@ -10,115 +10,80 @@
       "cameras": [
         {
           "name": "Bullet 05 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 5,
           "complemento": "Bullet 05 Optica"
         },
         {
           "name": "Bullet 02 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "301",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 2,
           "complemento": "Bullet 02 Optica"
         },
         {
           "name": "Bullet 03 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "501",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 3,
           "complemento": "Bullet 03 Optica"
         },
         {
           "name": "Bullet 04 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "701",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 4,
           "complemento": "Bullet 04 Optica"
         },
         {
           "name": "Bullet 07 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "901",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 7,
           "complemento": "Bullet 07 Optica"
         },
         {
           "name": "PTZ 01",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "1101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 9,
           "complemento": "PTZ 01"
         },
         {
           "name": "Bullet 01 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "1201",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Bullet 01 Optica"
         },
         {
           "name": "Bullet 08 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "1401",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 8,
           "complemento": "Bullet 08 Optica"
         },
         {
           "name": "MD O&M",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "1601",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 10,
           "complemento": "MD O&M"
         },
         {
           "name": "Bullet 06 Optica",
-          "ip": "192.168.3.103",
-          "porta": 59008,
           "canal": "1701",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 6,
           "complemento": "Bullet 06 Optica"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "ip": "192.168.3.103",
+      "porta": 59008,
+      "usuario": "admin",
+      "senha": "flt030825"
     }
   ]
 }

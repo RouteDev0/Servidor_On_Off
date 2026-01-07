@@ -12,182 +12,120 @@
       "cameras": [
         {
           "name": "Bullet 01 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
-
           "canal": "101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Bullet 01 O - Matao 01"
         },
         {
           "name": "Bullet 02 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "301",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 2,
           "complemento": "Bullet 02 O - Matao 01"
         },
         {
           "name": "Bullet 03 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "601",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 3,
           "complemento": "Bullet 03 O - Matao 01"
         },
         {
           "name": "Bullet 04 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "701",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 4,
           "complemento": "Bullet 04 O - Matao 01"
         },
         {
           "name": "Bullet 05 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "901",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 5,
           "complemento": "Bullet 05 O - Matao 01"
         },
         {
           "name": "Bullet 06 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "1101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 6,
           "complemento": "Bullet 06 O - Matao 01"
         },
         {
           "name": "Bullet 07 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "1301",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 7,
           "complemento": "IPCamera 13"
         },
         {
           "name": "Bullet 08 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "1501",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 8,
           "complemento": "Bullet 08 O - Matao 01"
         },
         {
           "name": "Bullet 09 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "1701",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 9,
           "complemento": "Bullet 09 O - Matao 01"
         },
         {
           "name": "Bullet 10 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "1901",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 10,
           "complemento": "Bullet 10 O - Matao 01"
         },
         {
           "name": "Bullet 11 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "2101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 11,
           "complemento": "Bullet 11 O - Matao 01"
         },
         {
           "name": "Bullet 12 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "2301",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 12,
           "complemento": "Bullet 12 O - Matao 01"
         },
         {
           "name": "Bullet 13 O - Matao 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "2501",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 13,
           "complemento": "Bullet 13 O - Matao 01"
         },
         {
           "name": "Bullet 14",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "2801",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 14,
           "complemento": "Bullet 14 T - Matao 01"
         },
         {
           "name": "PTZ 01",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "2901",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 15,
           "complemento": "Matao 01 - PTZ 01"
         },
         {
           "name": "PTZ 02",
-          "ip": "10.200.5.90",
-          "porta": 80,
           "canal": "3101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 16,
           "complemento": "Matao 01 - PTZ 02"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "admin",
+      "senha": "flt030825"
     }
   ]
 }

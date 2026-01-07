@@ -10,181 +10,122 @@
       "cameras": [
         {
           "name": "Camera 01",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "101",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Camera 01"
         },
         {
           "name": "Camera 01",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "301",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 2,
           "complemento": "Camera 02"
         },
         {
           "name": "Camera 03",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "501",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 3,
           "complemento": "Camera 03"
         },
         {
           "name": "Camera 04",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "701",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 4,
           "complemento": "Camera 04"
         },
         {
           "name": "Camera 05",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "701",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 5,
           "complemento": "Camera 05"
         },
         {
           "name": "Camera 06",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "1101",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 6,
           "complemento": "Camera 06"
         },
         {
           "name": "Camera 07",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "1301",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 7,
           "complemento": "Camera 07"
         },
         {
           "name": "Camera 08",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "1501",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 8,
           "complemento": "Camera 08"
         },
         {
           "name": "Camera 09",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "1701",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 9,
           "complemento": "Camera 09"
         },
         {
           "name": "Camera 10",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "1901",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 10,
           "complemento": "Camera 10"
         },
         {
           "name": "Camera 11",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "2101",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 11,
           "complemento": "Camera 11"
         },
         {
           "name": "Camera 12",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "2301",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 12,
           "complemento": "Camera 12"
         },
         {
           "name": "Camera 13",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "2501",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 13,
           "complemento": "Camera 13"
         },
         {
           "name": "Camera 14",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "2701",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 14,
           "complemento": "Camera 14"
         },
         {
           "name": "Camera 15",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "2801",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 15,
           "complemento": "Camera 15"
         },
         {
           "name": "Camera 16",
-          "ip": "10.200.7.90",
-          "porta": 80,
           "canal": "2901",
-          "usuario": "admin",
-          "senha": "orl809423",
           "identificacao": "E",
           "setor": 16,
           "complemento": "Camera 16"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "ip": "10.200.7.90",
+      "porta": 80,
+      "usuario": "admin",
+      "senha": "orl809423"
     }
   ]
 }

@@ -12,38 +12,29 @@
       "cameras": [
         {
           "name": "D16 TELAS_BUNKER",
-          "ip": "187.87.247.136",
-          "porta": 60086,
           "canal": "1601",
-          "usuario": "admin",
-          "senha": "0450Route!",
           "identificacao": "E",
           "setor": 1,
           "complemento": "TELAS BUNKER"
         },
         {
           "name": "D17 OPERADOR BUNKER",
-          "ip": "187.87.247.136",
-          "porta": 60086,
           "canal": "1701",
-          "usuario": "admin",
-          "senha": "0450Route!",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OPERADOR BUNKER"
         },
         {
           "name": "D18 CLAUSURA",
-          "ip": "187.87.247.136",
-          "porta": 60086,
           "canal": "1801",
-          "usuario": "admin",
-          "senha": "0450Route!",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CLAUSURA"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "admin",
+      "senha": "0450Route!"
     }
   ]
 }

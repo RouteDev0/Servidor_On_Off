@@ -12,93 +12,64 @@
       "cameras": [
         {
           "name": "D1 SBO01-SE",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "101",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "SBO01-SE"
         },
         {
           "name": "D2 Bullet 05",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "201",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Bullet 05"
         },
         {
           "name": "D8 OeM INT - SANTA BARBARA",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "801",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM INT - SANTA BARBARA"
         },
         {
           "name": "D16 PORTAO FUNDOS - SANTA BARBARA",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "1601",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PORTAO FUNDOS - SANTA BARBARA"
         },
         {
           "name": "D17 SBO01-PTZ03",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "1701",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "SBO01-PTZ03"
         },
         {
           "name": "D18 PTZ 01 - SANTA BARBARA",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "1801",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 01 - SANTA BARBARA"
         },
         {
           "name": "D19 OeM EXT - SANTA BARBARA",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "1901",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM EXT - SANTA BARBARA"
         },
         {
           "name": "D21 PTZ 02 - SANTA BARBARA",
-          "ip": "10.200.62.3",
-          "porta": 80,
           "canal": "2101",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 02 - SANTA BARBARA"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "thopen",
+      "senha": "Th0@2025"
     }
   ]
 }

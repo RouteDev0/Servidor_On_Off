@@ -5,127 +5,93 @@
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
-  "cameras": [
+  "dvrs": [
     {
-      "name": "Camera 21",
       "ip": "187.72.17.187",
       "porta": 60080,
-      "canal": "2101",
+      "protocol": "hikvision",
+      "cliente": "9317",
+      "cameras": [
+        {
+          "name": "Camera 21",
+          "canal": "2101",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera 21"
+        },
+        {
+          "name": "Camera 11",
+          "canal": "1101",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "Camera 11"
+        },
+        {
+          "name": "Camera 9",
+          "canal": "901",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "Camera 9"
+        },
+        {
+          "name": "Camera 5",
+          "canal": "501",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "Camera 5"
+        },
+        {
+          "name": "Camera 3",
+          "canal": "301",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "Camera 3"
+        },
+        {
+          "name": "Camera 18",
+          "canal": "1801",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "Camera 18"
+        },
+        {
+          "name": "Camera 7",
+          "canal": "701",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "Camera 7"
+        },
+        {
+          "name": "Camera 1",
+          "canal": "101",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "Camera 1"
+        },
+        {
+          "name": "Camera 13",
+          "canal": "1301",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "Camera 13"
+        },
+        {
+          "name": "Camera 19",
+          "canal": "1901",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "Camera 19"
+        },
+        {
+          "name": "Camera 22",
+          "canal": "2201",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "Camera 22"
+        }
+      ],
       "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 1,
-      "complemento": "Camera 21"
-    },
-    {
-      "name": "Camera 11",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "1101",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 2,
-      "complemento": "Camera 11"
-    },
-    {
-      "name": "Camera 9",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "901",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 3,
-      "complemento": "Camera 9"
-    },
-    {
-      "name": "Camera 5",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "501",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 4,
-      "complemento": "Camera 5"
-    },
-    {
-      "name": "Camera 3",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "301",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 5,
-      "complemento": "Camera 3"
-    },
-    {
-      "name": "Camera 18",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "1801",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 6,
-      "complemento": "Camera 18"
-    },
-    {
-      "name": "Camera 7",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "701",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 7,
-      "complemento": "Camera 7"
-    },
-    {
-      "name": "Camera 1",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "101",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 8,
-      "complemento": "Camera 1"
-    },
-    {
-      "name": "Camera 13",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "1301",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 9,
-      "complemento": "Camera 13"
-    },
-    {
-      "name": "Camera 19",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "1901",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 10,
-      "complemento": "Camera 19"
-    },
-    {
-      "name": "Camera 22",
-      "ip": "187.72.17.187",
-      "porta": 60080,
-      "canal": "2201",
-      "usuario": "admin",
-      "senha": "0450@Lux",
-      "identificacao": "E",
-      "setor": 11,
-      "complemento": "Camera 22"
+      "senha": "0450@Lux"
     }
   ]
 }

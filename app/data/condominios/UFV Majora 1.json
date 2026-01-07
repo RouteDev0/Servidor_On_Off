@@ -12,60 +12,43 @@
       "cameras": [
         {
           "name": "D1 ENTRADA SE - MARAJOARA",
-          "ip": "10.200.57.3",
-          "porta": 80,
           "canal": "101",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "ENTRADA SE - MARAJOARA"
         },
         {
           "name": "D2 PTZ 01 - FUNDOS - MARAJOARA",
-          "ip": "10.200.57.3",
-          "porta": 80,
           "canal": "201",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 01 - FUNDOS - MARAJOARA"
         },
         {
           "name": "D3 PTZ 02 - FRENTE - MARAJOARA",
-          "ip": "10.200.57.3",
-          "porta": 80,
           "canal": "301",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 02 - FRENTE - MARAJOARA"
         },
         {
           "name": "D4 OEM EXT - MARAJOARA",
-          "ip": "10.200.57.3",
-          "porta": 80,
           "canal": "401",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OEM EXT - MARAJOARA"
         },
         {
           "name": "D5 OEM INT - MARAJOARA",
-          "ip": "10.200.57.3",
-          "porta": 80,
           "canal": "501",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OEM INT - MARAJOARA"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "thopen",
+      "senha": "Th0@2025"
     }
   ]
 }

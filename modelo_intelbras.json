@@ -1,0 +1,47 @@
+{
+  "particao": "01",
+  "empresa": 4,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvrs": [
+    {
+      "protocol": "intelbras",
+      "ip": "192.168.1.100",
+      "porta": 80,
+      "usuario": "admin",
+      "senha": "senha_do_dvr",
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "Camera 01",
+          "canal": "1",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "Camera Intelbras - Entrada"
+        },
+        {
+          "name": "Camera 02",
+          "canal": "2",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "Camera Intelbras - Saída"
+        },
+        {
+          "name": "Camera 03",
+          "canal": "3",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "Camera Intelbras - Área Interna"
+        },
+        {
+          "name": "Camera 04",
+          "canal": "4",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "Camera Intelbras - Estacionamento"
+        }
+      ]
+    }
+  ]
+}

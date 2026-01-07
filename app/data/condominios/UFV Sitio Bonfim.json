@@ -12,137 +12,92 @@
       "cameras": [
         {
           "name": "Bullet 01",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Bullet 01"
         },
         {
           "name": "Bullet 02",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "301",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 2,
           "complemento": "Bullet 02"
         },
         {
           "name": "Bullet 03",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "501",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 3,
           "complemento": "Bullet 03"
         },
         {
           "name": "Bullet 04",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "701",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 4,
           "complemento": "Bullet 04"
         },
         {
           "name": "Bullet 05",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "901",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 5,
           "complemento": "Bullet 05"
         },
         {
           "name": "Bullet 06",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "1101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 6,
           "complemento": "Bullet 06"
         },
         {
           "name": "Bullet 07",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "1301",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 7,
           "complemento": "Bullet 07"
         },
         {
           "name": "Bullet 08",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "1501",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 8,
           "complemento": "Bullet 08"
         },
         {
           "name": "Bullet 09",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "1701",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 9,
           "complemento": "Bullet 09"
         },
         {
           "name": "Bullet portao",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "1901",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 10,
           "complemento": "Bullet portao"
         },
         {
           "name": "MD O&M",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "2001",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 11,
           "complemento": "MD O&M"
         },
         {
           "name": "SPEED DOME",
-          "ip": "192.168.1.118",
-          "porta": 80,
           "canal": "2101",
-          "usuario": "admin",
-          "senha": "flt030825",
           "identificacao": "E",
           "setor": 12,
           "complemento": "SPEED DOME"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "admin",
+      "senha": "flt030825"
     }
   ]
 }

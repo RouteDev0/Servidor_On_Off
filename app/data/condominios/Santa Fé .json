@@ -4,126 +4,96 @@
   "empresa": 4,
   "ocorrencia": 960,
   "codigoconjuntodeocorrencias": 7,
-  "cameras": [
+  "dvrs": [
     {
-      "name": "Camera Termica 1 ",
       "ip": "valesantafe.ddns.net",
       "porta": 62080,
-      "canal": "101",
+      "protocol": "hikvision",
+      "cliente": "9092",
+      "cameras": [
+        {
+          "name": "Camera Termica 1 ",
+          "canal": "101",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 1,
+          "complemento": "Camera Termica 1 "
+        },
+        {
+          "name": "Camera Termica 2 ",
+          "canal": "103",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 2,
+          "complemento": "Camera Termica 2 "
+        },
+        {
+          "name": "Camera Termica 3",
+          "canal": "105",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 3,
+          "complemento": "Camera Termica 3"
+        },
+        {
+          "name": "Camera Termica 4",
+          "canal": "107",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 4,
+          "complemento": "Camera Termica 4"
+        },
+        {
+          "name": "Camera Termica 5",
+          "canal": "109",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 5,
+          "complemento": "Camera Termica 5"
+        },
+        {
+          "name": "Camera Termica 6",
+          "canal": "1011",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 6,
+          "complemento": "Camera Termica 6"
+        },
+        {
+          "name": "Camera Termica 7",
+          "canal": "1013",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 7,
+          "complemento": "Camera Termica 7"
+        },
+        {
+          "name": "Camera Termica 8",
+          "canal": "1015",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 8,
+          "complemento": "Camera Termica 8"
+        },
+        {
+          "name": "Camera Termica 9",
+          "canal": "1017",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 9,
+          "complemento": "Camera Termica 9"
+        },
+        {
+          "name": "Camera Termica 10",
+          "canal": "1019",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 10,
+          "complemento": "Camera Termica 10"
+        }
+      ],
       "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 1,
-      "complemento": "Camera Termica 1 "
-    },
-    {
-      "name": "Camera Termica 2 ",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "103",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 2,
-      "complemento": "Camera Termica 2 "
-    },
-    {
-      "name": "Camera Termica 3",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "105",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 3,
-      "complemento": "Camera Termica 3"
-    },
-    {
-      "name": "Camera Termica 4",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "107",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 4,
-      "complemento": "Camera Termica 4"
-    },
-    {
-      "name": "Camera Termica 5",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "109",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 5,
-      "complemento": "Camera Termica 5"
-    },
-    {
-      "name": "Camera Termica 6",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "1011",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 6,
-      "complemento": "Camera Termica 6"
-    },
-    {
-      "name": "Camera Termica 7",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "1013",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 7,
-      "complemento": "Camera Termica 7"
-    },
-    {
-      "name": "Camera Termica 8",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "1015",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 8,
-      "complemento": "Camera Termica 8"
-    },
-    {
-      "name": "Camera Termica 9",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "1017",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 9,
-      "complemento": "Camera Termica 9"
-    },
-    {
-      "name": "Camera Termica 10",
-      "ip": "valesantafe.ddns.net",
-      "porta": 62080,
-      "canal": "1019",
-      "usuario": "admin",
-      "senha": "0450route",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 10,
-      "complemento": "Camera Termica 10"
+      "senha": "0450route"
     }
   ]
 }

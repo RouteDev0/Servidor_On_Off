@@ -12,170 +12,113 @@
       "cameras": [
         {
           "name": "D1 PTZ 01 - SANTAREM 01",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "101",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 01 - SANTAREM 01"
         },
         {
           "name": "D2 PTZ 02 - SANTAREM 01",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "201",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 02 - SANTAREM 01"
         },
         {
           "name": "D3 PTZ 03 - SANTAREM 01",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "301",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 03 - SANTAREM 01"
         },
         {
           "name": "D4 PTZ 04 - SANTAREM 02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "401",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 04 - SANTAREM 02"
         },
         {
           "name": "D5 PTZ 05 - SANTAREM 02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "501",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 05 - SANTAREM 02"
         },
         {
           "name": "D6 PTZ 06 - SANTAREM 02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "601",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 06 - SANTAREM 02"
         },
         {
           "name": "D7 PTZ 07 - SANTAREM 02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "701",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 07 - SANTAREM 02"
         },
         {
           "name": "D8 OeM INT - SANTAREM 01-02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "801",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM INT - SANTAREM 01-02"
         },
         {
           "name": "D9 OeM EXT - SANTAREM 01-02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "901",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM EXT - SANTAREM 01-02"
         },
         {
           "name": "D10 ENTRADA - SANTAREM 01-02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "1001",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "ENTRADA - SANTAREM 01-02"
         },
         {
           "name": "D11 TRAFO - SANTAREM 01-02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "1101",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "TRAFO - SANTAREM 01-02"
         },
         {
           "name": "D12 STA01/02-SE02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "1201",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "STA01/02-SE02"
         },
         {
           "name": "D13 STA01/02-PORTAO SE",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "1301",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "STA01/02-PORTAO SE"
         },
         {
           "name": "D14 STA01/02-SE02",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "1401",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "STA01/02-SE02"
         },
         {
           "name": "D15 STA01/02-ACESSO",
-          "ip": "10.200.55.3",
-          "porta": 80,
           "canal": "1501",
-          "usuario": "Thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "STA01/02-ACESSO"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "Thopen",
+      "senha": "Th0@2025"
     }
   ]
 }

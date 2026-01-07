@@ -12,82 +12,57 @@
       "cameras": [
         {
           "name": "D1 OeM INT - GUARATINGUETA 05",
-          "ip": "10.200.52.2",
-          "porta": 80,
           "canal": "101",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM INT - GUARATINGUETA 05"
         },
         {
           "name": "D2 Portao - GUARATINGUETA 5",
-          "ip": "10.200.52.2",
-          "porta": 80,
           "canal": "201",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Portao - GUARATINGUETA 5"
         },
         {
           "name": "D3 PTZ 01 - GUARATINGUETA 05",
-          "ip": "10.200.52.2",
-          "porta": 80,
           "canal": "301",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 01 - GUARATINGUETA 05"
         },
         {
           "name": "D4 OeM EXT - GUARATINGUETA 05",
-          "ip": "10.200.52.2",
-          "porta": 80,
           "canal": "401",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM EXT - GUARATINGUETA 05"
         },
         {
           "name": "D5 PTZ 02 - GUARATINGUETA 05",
-          "ip": "10.200.52.2",
-          "porta": 80,
           "canal": "501",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 02 - GUARATINGUETA 05"
         },
         {
           "name": "D6 PTZ 03 - GUARATINGUETA 05",
-          "ip": "10.200.52.2",
-          "porta": 80,
           "canal": "601",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 03 - GUARATINGUETA 05"
         },
         {
           "name": "D7 SE - GUARATINGUETA 05",
-          "ip": "10.200.52.2",
-          "porta": 80,
           "canal": "701",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "SE - GUARATINGUETA 05"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "thopen",
+      "senha": "Th0@2025"
     }
   ]
 }

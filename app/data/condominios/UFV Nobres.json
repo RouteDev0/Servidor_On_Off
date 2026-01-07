@@ -10,181 +10,122 @@
       "cameras": [
         {
           "name": "DOM_01",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "101",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "DOM_01"
         },
         {
           "name": "Bullet_01",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "201",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Bullet_01"
         },
         {
           "name": "Bullet_02",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "301",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "Bullet_02"
         },
         {
           "name": "CAM_01",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "401",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CAM_01"
         },
         {
           "name": "CAM_02_OPT",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "501",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CAM_02_OPT"
         },
         {
           "name": "CAM_03",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "701",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CAM_03"
         },
         {
           "name": "CAM_04_OPT",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "801",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 2,
           "complemento": "CAM_04_OPT"
         },
         {
           "name": "CAM_05",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "1001",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CAM_05"
         },
         {
           "name": "CAM_06_OPT",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "1101",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 3,
           "complemento": "CAM_06_OPT"
         },
         {
           "name": "CAM_07",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "1301",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CAM_07"
         },
         {
           "name": "CAM_08_OPT",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "1401",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 4,
           "complemento": "CAM_08_OPT"
         },
         {
           "name": "CAM_09",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "1601",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CAM_09"
         },
         {
           "name": "CAM_10_OPT",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "1701",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 5,
           "complemento": "CAM_10_OPT"
         },
         {
           "name": "CAM_11",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "1901",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 1,
           "complemento": "CAM_11"
         },
         {
           "name": "CAM_12_OPT",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "2001",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 6,
           "complemento": "CAM_12_OPT"
         },
         {
           "name": "CAM_13_OPT",
-          "ip": "200.81.48.34",
-          "porta": 60080,
           "canal": "2201",
-          "usuario": "admin",
-          "senha": "Pr0t3@nT3c",
           "identificacao": "E",
           "setor": 7,
           "complemento": "CAM_13_OPT"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "ip": "200.81.48.34",
+      "porta": 60080,
+      "usuario": "admin",
+      "senha": "Pr0t3@nT3c"
     }
   ]
 }

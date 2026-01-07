@@ -4,186 +4,136 @@
   "empresa": 4,
   "ocorrencia": 960,
   "codigoconjuntodeocorrencias": 7,
-  "cameras": [
+  "dvrs": [
     {
-      "name": "Canal 01",
       "ip": "hek08szz2t5.sn.mynetname.net",
       "porta": 32111,
-      "canal": "101",
+      "protocol": "hikvision",
+      "cliente": "9113",
+      "cameras": [
+        {
+          "name": "Canal 01",
+          "canal": "101",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 1,
+          "complemento": "Setor 1 - IP 10.10.76.37"
+        },
+        {
+          "name": "Canal 02",
+          "canal": "201",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 2,
+          "complemento": "Setor 2 - IP 10.10.76.38"
+        },
+        {
+          "name": "Canal 03",
+          "canal": "301",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 3,
+          "complemento": "Setor 3 - IP 10.10.76.39"
+        },
+        {
+          "name": "Canal 04",
+          "canal": "401",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 4,
+          "complemento": "Setor 4 - IP 10.10.76.40"
+        },
+        {
+          "name": "Canal 05",
+          "canal": "501",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 5,
+          "complemento": "Setor 5 - IP 10.10.76.41"
+        },
+        {
+          "name": "Canal 06",
+          "canal": "601",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 6,
+          "complemento": "Setor 6 - IP 10.10.76.42"
+        },
+        {
+          "name": "Canal 09",
+          "canal": "901",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 9,
+          "complemento": "Setor 9 - IP 10.10.76.45"
+        },
+        {
+          "name": "Canal 11",
+          "canal": "1101",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 11,
+          "complemento": "Setor 11 - IP 10.10.76.46"
+        },
+        {
+          "name": "Canal 13",
+          "canal": "1301",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 13,
+          "complemento": "Setor 13 - IP 10.10.76.47"
+        },
+        {
+          "name": "Canal 15",
+          "canal": "1501",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 15,
+          "complemento": "Setor 15 - IP 10.10.76.48"
+        },
+        {
+          "name": "Canal 17",
+          "canal": "1701",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 17,
+          "complemento": "Setor 17 - IP 10.10.76.49"
+        },
+        {
+          "name": "Canal 19",
+          "canal": "1901",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 19,
+          "complemento": "Setor 19 - IP 10.10.76.50"
+        },
+        {
+          "name": "Canal 22",
+          "canal": "2201",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 21,
+          "complemento": "Setor 21 - IP 10.10.76.51"
+        },
+        {
+          "name": "Canal 24",
+          "canal": "2401",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 23,
+          "complemento": "Setor 23 - IP 10.10.76.52"
+        },
+        {
+          "name": "Canal 26",
+          "canal": "2601",
+          "identificacao": "E",
+          "codigomaquina": 897,
+          "setor": 25,
+          "complemento": "Setor 25 - IP 10.10.76.53"
+        }
+      ],
       "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 1,
-      "complemento": "Setor 1 - IP 10.10.76.37"
-    },
-    {
-      "name": "Canal 02",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "201",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 2,
-      "complemento": "Setor 2 - IP 10.10.76.38"
-    },
-    {
-      "name": "Canal 03",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "301",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 3,
-      "complemento": "Setor 3 - IP 10.10.76.39"
-    },
-    {
-      "name": "Canal 04",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "401",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 4,
-      "complemento": "Setor 4 - IP 10.10.76.40"
-    },
-    {
-      "name": "Canal 05",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "501",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 5,
-      "complemento": "Setor 5 - IP 10.10.76.41"
-    },
-    {
-      "name": "Canal 06",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "601",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 6,
-      "complemento": "Setor 6 - IP 10.10.76.42"
-    },
-    {
-      "name": "Canal 09",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "901",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 9,
-      "complemento": "Setor 9 - IP 10.10.76.45"
-    },
-    {
-      "name": "Canal 11",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "1101",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 11,
-      "complemento": "Setor 11 - IP 10.10.76.46"
-    },
-    {
-      "name": "Canal 13",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "1301",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 13,
-      "complemento": "Setor 13 - IP 10.10.76.47"
-    },
-    {
-      "name": "Canal 15",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "1501",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 15,
-      "complemento": "Setor 15 - IP 10.10.76.48"
-    },
-    {
-      "name": "Canal 17",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "1701",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 17,
-      "complemento": "Setor 17 - IP 10.10.76.49"
-    },
-    {
-      "name": "Canal 19",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "1901",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 19,
-      "complemento": "Setor 19 - IP 10.10.76.50"
-    },
-    {
-      "name": "Canal 22",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "2201",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 21,
-      "complemento": "Setor 21 - IP 10.10.76.51"
-    },
-    {
-      "name": "Canal 24",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "2401",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 23,
-      "complemento": "Setor 23 - IP 10.10.76.52"
-    },
-    {
-      "name": "Canal 26",
-      "ip": "hek08szz2t5.sn.mynetname.net",
-      "porta": 32111,
-      "canal": "2601",
-      "usuario": "admin",
-      "senha": "0450Route!",
-      "identificacao": "E",
-      "codigomaquina": 897,
-      "setor": 25,
-      "complemento": "Setor 25 - IP 10.10.76.53"
+      "senha": "0450Route!"
     }
   ]
 }

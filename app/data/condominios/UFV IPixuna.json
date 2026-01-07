@@ -12,137 +12,92 @@
       "cameras": [
         {
           "name": "D1 OeM EXT - IPIXUNA 01-02",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "101",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM EXT - IPIXUNA 01-02"
         },
         {
           "name": "D2 PTZ 01 - IPIXUNA 01",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "201",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 01 - IPIXUNA 01"
         },
         {
           "name": "D3 LATERAL - IPIXUNA 01",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "301",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "LATERAL - IPIXUNA 01"
         },
         {
           "name": "D4 ENTRADA - IPIXUNA 01",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "401",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "ENTRADA - IPIXUNA 01"
         },
         {
           "name": "D5 IPX01-PTZ02_QCFTVD",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "501",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "IPX01-PTZ02_QCFTVD"
         },
         {
           "name": "D6 IPX01/02-TRASNFORMADOR EXT.",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "601",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "IPX01/02-TRASNFORMADOR EXT."
         },
         {
           "name": "D7 IPX02-PTZ03_QCFTVE",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "701",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "IPX02-PTZ03_QCFTVE"
         },
         {
           "name": "D8 PTZ 04 - IPIXUNA 02",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "801",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "PTZ 04 - IPIXUNA 02"
         },
         {
           "name": "D9 SC 1 - IPIXUNA 01-02",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "901",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "SC 1 - IPIXUNA 01-02"
         },
         {
           "name": "D10 SC 2 - IPIXUNA 01-02",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "1001",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "SC 2 - IPIXUNA 01-02"
         },
         {
           "name": "D11 TRANSFORMADOR - IPIXUNA 01-02",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "1101",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "TRANSFORMADOR - IPIXUNA 01-02"
         },
         {
           "name": "D12 OeM INT. - IPIXUNA 01-02",
-          "ip": "10.200.64.26",
-          "porta": 80,
           "canal": "1201",
-          "usuario": "thopen",
-          "senha": "Th0@2025",
           "identificacao": "E",
           "setor": 1,
           "complemento": "OeM INT. - IPIXUNA 01-02"
         }
-      ]
+      ],
+      "protocol": "hikvision",
+      "usuario": "thopen",
+      "senha": "Th0@2025"
     }
   ]
 }
