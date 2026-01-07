@@ -24,19 +24,29 @@ class CondominioService:
             cameras = []
             if "dvrs" in data:
                 for dvr in data["dvrs"]:
+                    # Get protocol from DVR (default: hikvision)
+                    dvr_protocol = dvr.get("protocol", "hikvision").lower()
                     # Injeta informações do DVR em cada câmera
                     for camera in dvr.get("cameras", []):
                         camera = camera.copy()
                         camera["_dvr_ip"] = dvr.get("ip")
                         camera["_dvr_porta"] = dvr.get("porta", 80)
+                        camera["_dvr_protocol"] = dvr_protocol
+                        camera["_dvr_usuario"] = dvr.get("usuario", "admin")
+                        camera["_dvr_senha"] = dvr.get("senha", "admin")
                         cameras.append(camera)
             elif "dvs" in data:
                 for dv in data["dvs"]:
+                    # Get protocol from DV (default: hikvision)
+                    dv_protocol = dv.get("protocol", "hikvision").lower()
                     # Injeta informações do DV em cada câmera
                     for camera in dv.get("cameras", []):
                         camera = camera.copy()
                         camera["_dvr_ip"] = dv.get("ip")
                         camera["_dvr_porta"] = dv.get("porta", 80)
+                        camera["_dvr_protocol"] = dv_protocol
+                        camera["_dvr_usuario"] = dv.get("usuario", "admin")
+                        camera["_dvr_senha"] = dv.get("senha", "admin")
                         cameras.append(camera)
             else:
                 cameras = data.get("cameras", [])
