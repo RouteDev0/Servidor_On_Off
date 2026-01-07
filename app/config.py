@@ -42,8 +42,15 @@ class Config:
     CACHE_DURATION = 30  # segundos
     CACHE_DURATION_OFFLINE = 120  # segundos
 
+    # Configurações de protocolo
+    DEFAULT_PROTOCOL = "hikvision"  # Protocolo padrão se não especificado no DVR
+    
+    # Configurações específicas do Intelbras (CGI/Dahua)
+    INTELBRAS_MIN_IMAGE_SIZE = 1024  # bytes - tamanho mínimo para considerar imagem válida
+    INTELBRAS_TRACK_IMAGE_SIZE = True  # Rastreia mudanças no Content-Length entre capturas
+
     # Configurações de API
-    API_URL = "http://192.168.2.50:5554/ExecutarComando"
+    API_URL = "http://192.168.2.50:55554/ExecutarComando"
     # "http://192.168.2.50:5554/ExecutarComando"
     API_USERNAME = "moni"
     # API_PASSWORD = "moni"
