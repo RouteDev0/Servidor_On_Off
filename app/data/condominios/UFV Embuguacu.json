@@ -10,7 +10,7 @@
       "ip": "10.200.2.90",
       "porta": 80,
       "protocol": "hikvision",
-      "cliente": "9188",
+      "cliente": "2009",
       "cameras": [
         {
           "name": "Bullet 1",

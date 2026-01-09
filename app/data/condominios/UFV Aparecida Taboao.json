@@ -8,7 +8,7 @@
     {
       "ip": "10.200.58.100",
       "porta": 80,
-      "cliente": "9999",
+      "cliente": "2022",
       "cameras": [
         {
           "name": "D1 PTZ 01 - APARECIDA DO TABOADO 01",

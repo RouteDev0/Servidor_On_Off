@@ -6,7 +6,7 @@
   "codigoconjuntodeocorrencias": 7,
   "dvrs": [
     {
-      "cliente": "9186",
+      "cliente": "2018",
       "cameras": [
         {
           "name": "Termica-Camera 1",
@@ -128,7 +128,7 @@
       "senha": "flt030825"
     },
     {
-      "cliente": "9187",
+      "cliente": "2019",
       "cameras": [
         {
           "name": "Bullet 17",

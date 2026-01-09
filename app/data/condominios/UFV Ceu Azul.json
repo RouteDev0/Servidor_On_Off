@@ -8,7 +8,7 @@
     {
       "ip": "192.168.3.126",
       "porta": 59090,
-      "cliente": "9180",
+      "cliente": "2007",
       "cameras": [
         {
           "name": "Bullet 01",

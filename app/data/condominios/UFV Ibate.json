@@ -8,7 +8,8 @@
     {
       "ip": "10.200.53.31",
       "porta": 80,
-      "cliente": "9999",
+      "cliente": "2029",
+      "name": "IBATE 01 HIKIVISION",
       "cameras": [
         {
           "name": "D1 PTZ 04 - IBATE 01",
@@ -60,7 +61,8 @@
     {
       "ip": "10.200.54.30",
       "porta": 80,
-      "cliente": "9999",
+      "cliente": "2031",
+      "name": "IBATE 02 HIKVISION",
       "cameras": [
         {
           "name": "D1 IPCamera 01",
@@ -115,7 +117,8 @@
       "porta": 80,
       "usuario": "thopen",
       "senha": "Th0@2025",
-      "cliente": "9999",
+      "cliente": "2030",
+      "name": "IBATE 01 INTELBRAS",
       "cameras": [
         {
           "name": "INTELBRAS - OeM INT - IBATE 01",

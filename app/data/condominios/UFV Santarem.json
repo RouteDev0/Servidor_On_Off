@@ -8,7 +8,7 @@
     {
       "ip": "10.200.55.3",
       "porta": 80,
-      "cliente": "9999",
+      "cliente": "2038",
       "cameras": [
         {
           "name": "D1 PTZ 01 - SANTAREM 01",

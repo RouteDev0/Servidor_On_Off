@@ -8,7 +8,7 @@
     {
       "ip": "10.200.50.3",
       "porta": 80,
-      "cliente": "9999",
+      "cliente": "2023",
       "cameras": [
         {
           "name": "D1 O&M - APARECIDA 3",

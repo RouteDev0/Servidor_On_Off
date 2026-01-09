@@ -8,7 +8,7 @@
     {
       "ip": "10.200.61.3",
       "porta": 80,
-      "cliente": "9999",
+      "cliente": "2026",
       "cameras": [
         {
           "name": "D1 PTZ 02 - CAXAMBU 01",

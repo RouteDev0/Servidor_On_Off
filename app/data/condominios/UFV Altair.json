@@ -6,7 +6,7 @@
   "codigomaquina": 897,
   "dvrs": [
     {
-      "cliente": "9189",
+      "cliente": "2002",
       "cameras": [
         {
           "name": "Camera 1",
@@ -128,7 +128,7 @@
       "senha": "flt030825"
     },
     {
-      "cliente": "9190",
+      "cliente": "2003",
       "particao": "01",
       "cameras": [
         {
