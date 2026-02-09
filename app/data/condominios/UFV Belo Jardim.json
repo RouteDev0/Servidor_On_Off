@@ -1,0 +1,268 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 960,
+  "codigoconjuntodeocorrencias": 7,
+  "codigomaquina": 897,
+  "dvrs": [
+    {
+      "cliente": "2069",
+      "cameras": [
+        {
+          "name": "P-01",
+          "canal": "101",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "P-01"
+        },
+        {
+          "name": "P-02",
+          "canal": "301",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "P-02"
+        },
+        {
+          "name": "P-03",
+          "canal": "501",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "P-03"
+        },
+        {
+          "name": "P-04",
+          "canal": "701",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "P-04"
+        },
+        {
+          "name": "P-05",
+          "canal": "901",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "P-05"
+        },
+        {
+          "name": "P-06",
+          "canal": "1101",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "P-06"
+        },
+        {
+          "name": "P-07",
+          "canal": "1301",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "P-07"
+        },
+        {
+          "name": "P-08",
+          "canal": "1501",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "P-08"
+        },
+        {
+          "name": "P-09",
+          "canal": "1701",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "P-09"
+        },
+        {
+          "name": "P-10",
+          "canal": "1901",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "P-10"
+        },
+        {
+          "name": "P-11",
+          "canal": "2101",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "P-11"
+        },
+        {
+          "name": "P-12",
+          "canal": "2301",
+          "identificacao": "E",
+          "setor": 12,
+          "complemento": "P-12"
+        },
+        {
+          "name": "P-13",
+          "canal": "2501",
+          "identificacao": "E",
+          "setor": 13,
+          "complemento": "P-13"
+        },
+        {
+          "name": "P-14",
+          "canal": "2701",
+          "identificacao": "E",
+          "setor": 14,
+          "complemento": "P-14"
+        },
+        {
+          "name": "P-15",
+          "canal": "2901",
+          "identificacao": "E",
+          "setor": 15,
+          "complemento": "P-15"
+        },
+        {
+          "name": "P-16",
+          "canal": "3101",
+          "identificacao": "E",
+          "setor": 16,
+          "complemento": "P-16"
+        },
+        {
+          "name": "D - 01",
+          "canal": "3101",
+          "identificacao": "E",
+          "setor": 17,
+          "complemento": "D - 01"
+        }
+      ],
+      "protocol": "hikvision",
+      "ip": "10.200.89.141",
+      "porta": 80,
+      "usuario": "admin",
+      "senha": "flt030825"
+    },
+    {
+      "cliente": "2070",
+      "particao": "01",
+      "cameras": [
+        {
+          "name": "P-17",
+          "canal": "101",
+          "identificacao": "E",
+          "setor": 17,
+          "complemento": "P-17"
+        },
+        {
+          "name": "P-18",
+          "canal": "301",
+          "identificacao": "E",
+          "setor": 18,
+          "complemento": "P-18"
+        },
+        {
+          "name": "P-19",
+          "canal": "501",
+          "identificacao": "E",
+          "setor": 19,
+          "complemento": "P-19"
+        },
+        {
+          "name": "P-20",
+          "canal": "701",
+          "identificacao": "E",
+          "setor": 20,
+          "complemento": "P-20"
+        },
+        {
+          "name": "P-21",
+          "canal": "901",
+          "identificacao": "E",
+          "setor": 21,
+          "complemento": "P-21"
+        },
+        {
+          "name": "P-22",
+          "canal": "1101",
+          "identificacao": "E",
+          "setor": 22,
+          "complemento": "P-22"
+        },
+        {
+          "name": "P-23",
+          "canal": "1301",
+          "identificacao": "E",
+          "setor": 23,
+          "complemento": "P-23"
+        },
+        {
+          "name": "P-24",
+          "canal": "1501",
+          "identificacao": "E",
+          "setor": 24,
+          "complemento": "P-24"
+        },
+        {
+          "name": "P-25",
+          "canal": "1701",
+          "identificacao": "E",
+          "setor": 25,
+          "complemento": "P-25"
+        },
+        {
+          "name": "P-26",
+          "canal": "1901",
+          "identificacao": "E",
+          "setor": 26,
+          "complemento": "P-26"
+        },
+        {
+          "name": "P - 08A",
+          "canal": "2101",
+          "identificacao": "E",
+          "setor": 27,
+          "complemento": "P - 08A"
+        },
+        {
+          "name": "P - 10A",
+          "canal": "2301",
+          "identificacao": "E",
+          "setor": 28,
+          "complemento": "P - 10A"
+        },
+        {
+          "name": "P - 13A",
+          "canal": "2501",
+          "identificacao": "E",
+          "setor": 29,
+          "complemento": "P - 13A"
+        },
+        {
+          "name": "P - 14A",
+          "canal": "2701",
+          "identificacao": "E",
+          "setor": 30,
+          "complemento": "P - 14A"
+        },
+        {
+          "name": "P - 21A",
+          "canal": "2901",
+          "identificacao": "E",
+          "setor": 31,
+          "complemento": "P - 21A"
+        },
+        {
+          "name": "E - 01",
+          "canal": "3001",
+          "identificacao": "E",
+          "setor": 32,
+          "complemento": "E - 01"
+        },
+        {
+          "name": "I - 01",
+          "canal": "3101",
+          "identificacao": "E",
+          "setor": 33,
+          "complemento": "I - 01"
+        }
+      ],
+      "protocol": "hikvision",
+      "ip": "10.200.89.142",
+      "porta": 80,
+      "usuario": "admin",
+      "senha": "flt030825"
+    }
+  ]
+}

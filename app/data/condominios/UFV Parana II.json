@@ -1,0 +1,138 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 960,
+  "codigoconjuntodeocorrencias": 7,
+  "codigomaquina": 897,
+  "dvrs": [
+    {
+      "cliente": "2066",
+      "cameras": [
+        {
+          "name": "BULLET 01 CANAL 1/2",
+          "canal": "101",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "BULLET 01 CANAL 1/2"
+        },
+        {
+          "name": "BULLET 02 CANAL 3/4",
+          "canal": "301",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "BULLET 02 CANAL 3/4"
+        },
+        {
+          "name": "BULLET 03 CANAL 5/6",
+          "canal": "501",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "BULLET 03 CANAL 5/6"
+        },
+        {
+          "name": "BULLET 04 CANAL 7/8",
+          "canal": "701",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "BULLET 04 CANAL 7/8"
+        },
+        {
+          "name": "BULLET 05 CANAL 9/10",
+          "canal": "901",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "BULLET 05 CANAL 9/10"
+        },
+        {
+          "name": "BULLET 06 CANAL 11/12",
+          "canal": "1101",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "BULLET 06 CANAL 11/12"
+        },
+        {
+          "name": "BULLET 07 CANAL 13/14",
+          "canal": "1301",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "BULLET 07 CANAL 13/14"
+        },
+        {
+          "name": "BULLET 08 CANAL 15/16",
+          "canal": "1501",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "BULLET 08 CANAL 15/16"
+        },
+        {
+          "name": "BULLET 09 CANAL 17/18",
+          "canal": "1701",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "BULLET 09 CANAL 17/18"
+        },
+        {
+          "name": "BULLET 10 CANAL 19/20",
+          "canal": "1901",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "BULLET 10 CANAL 19/20"
+        },
+        {
+          "name": "BULLET 11 CANAL 21/22",
+          "canal": "2101",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "BULLET 11 CANAL 21/22"
+        },
+        {
+          "name": "BULLET 12 CANAL 23/24",
+          "canal": "2301",
+          "identificacao": "E",
+          "setor": 12,
+          "complemento": "BULLET 12 CANAL 23/24"
+        },
+        {
+          "name": "BULLET 13 CANAL 25/26",
+          "canal": "2501",
+          "identificacao": "E",
+          "setor": 13,
+          "complemento": "BULLET 13 CANAL 25/26"
+        },
+        {
+          "name": "BULLET 14 CANAL 27/28",
+          "canal": "2701",
+          "identificacao": "E",
+          "setor": 14,
+          "complemento": "BULLET 14 CANAL 27/28"
+        },
+        {
+          "name": "PTZ CANAL 29/30",
+          "canal": "2901",
+          "identificacao": "E",
+          "setor": 15,
+          "complemento": "PTZ CANAL 29/30"
+        },
+        {
+          "name": "O&M CANAL 31",
+          "canal": "3101",
+          "identificacao": "E",
+          "setor": 16,
+          "complemento": "O&M CANAL 31"
+        },
+        {
+          "name": "PORTAO CANAL 32",
+          "canal": "3201",
+          "identificacao": "E",
+          "setor": 17,
+          "complemento": "PORTAO CANAL 32"
+        }
+      ],
+      "protocol": "hikvision",
+      "ip": "10.200.90.120",
+      "porta": 80,
+      "usuario": "admin",
+      "senha": "flt030825"
+    }
+  ]
+}
