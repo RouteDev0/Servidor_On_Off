@@ -48,7 +48,17 @@ class CondominioService:
                         camera["_dvr_usuario"] = dv.get("usuario", "admin")
                         camera["_dvr_senha"] = dv.get("senha", "admin")
                         cameras.append(camera)
-            else:
+            # Processa câmeras individuais (sem DVR/NVR)
+            if "cameras_individuais" in data:
+                for camera in data["cameras_individuais"]:
+                    camera = camera.copy()
+                    camera["_dvr_ip"] = camera.get("ip")
+                    camera["_dvr_porta"] = camera.get("porta", 80)
+                    camera["_dvr_protocol"] = camera.get("protocol", "intelbras").lower()
+                    camera["_dvr_usuario"] = camera.get("usuario", "admin")
+                    camera["_dvr_senha"] = camera.get("senha", "admin")
+                    cameras.append(camera)
+            if not cameras:
                 cameras = data.get("cameras", [])
             # usa exatamente o nome do arquivo JSON (sem extensão) como nome do condomínio
             nome_condominio = os.path.splitext(arquivo)[0]

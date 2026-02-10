@@ -1,0 +1,34 @@
+{
+  "cliente": "9999",
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "cameras_individuais": [
+    {
+      "name": "Bullet Entrada",
+      "ip": "10.200.3.10",
+      "porta": 80,
+      "protocol": "intelbras",
+      "usuario": "admin",
+      "senha": "camera123",
+      "canal": "1",
+      "identificacao": "E",
+      "setor": 1,
+      "complemento": "Bullet Entrada"
+    },
+    {
+      "name": "Speed Dome Patio",
+      "ip": "10.200.3.11",
+      "porta": 80,
+      "protocol": "hikvision",
+      "usuario": "admin",
+      "senha": "camera456",
+      "canal": "101",
+      "identificacao": "E",
+      "setor": 2,
+      "complemento": "Speed Dome Patio"
+    }
+  ]
+}
