@@ -48,9 +48,6 @@ async function atualizarStatus() {
     document.getElementById('stat-offline').textContent = totalOff;
     document.getElementById('stat-percent').textContent = percentOnline + '%';
 
-    // Populate UFV filter (only once)
-    populateUfvFilter();
-
     // Render cards
     renderizarCondominios();
 
@@ -64,22 +61,7 @@ async function atualizarStatus() {
   }
 }
 
-// ── Populate UFV dropdown ──
-let ufvPopulated = false;
-function populateUfvFilter() {
-  if (ufvPopulated || !dadosGlobais) return;
-  const select = document.getElementById('ufv-filter');
-  if (!select) return;
 
-  const names = Object.keys(dadosGlobais).sort((a, b) => a.localeCompare(b));
-  names.forEach(name => {
-    const opt = document.createElement('option');
-    opt.value = name;
-    opt.textContent = name;
-    select.appendChild(opt);
-  });
-  ufvPopulated = true;
-}
 
 // ── Severity classification ──
 function getSeverity(offPercent) {
@@ -134,16 +116,10 @@ function renderizarCondominios() {
   // Get filter values
   const statusFilter = document.getElementById('status-filter')?.value || 'offline';
   const typeFilter = document.getElementById('type-filter')?.value || 'all';
-  const ufvFilter = document.getElementById('ufv-filter')?.value || 'all';
   const orderFilter = document.getElementById('order-filter')?.value || 'most-offline';
 
   // Filter entries
   let entries = Object.entries(dadosGlobais);
-
-  // UFV filter
-  if (ufvFilter !== 'all') {
-    entries = entries.filter(([name]) => name === ufvFilter);
-  }
 
   // Type filter
   if (typeFilter !== 'all') {

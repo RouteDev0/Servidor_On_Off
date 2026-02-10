@@ -3,7 +3,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 import time
 
-API_URL = "http://192.168.2.50:555/ExecutarComando"
+API_URL = "http://192.168.2.50:5554/ExecutarComando"
 API_USER = "moni"
 API_PASS = "moni"
 auth = HTTPBasicAuth(API_USER, API_PASS)
