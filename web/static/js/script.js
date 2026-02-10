@@ -1,176 +1,241 @@
-// Função para atualizar barras de câmeras dinamicamente
-function updateCameraBars(onlineCameras, offlineCameras) {
-  const totalCameras = onlineCameras + offlineCameras
 
-  if (totalCameras === 0) {
-    createProgressBar(0, 0)
-    return
-  }
+let dadosGlobais = null;
+let lastUpdateTime = Date.now();
+let refreshTimerInterval = null;
 
-  const greenPercentage = (onlineCameras / totalCameras) * 100
-  const redPercentage = (offlineCameras / totalCameras) * 100
+// ── Refresh Timer ──
+function startRefreshTimer() {
+  if (refreshTimerInterval) clearInterval(refreshTimerInterval);
+  lastUpdateTime = Date.now();
 
-  createProgressBar(greenPercentage, redPercentage)
+  refreshTimerInterval = setInterval(() => {
+    const elapsed = Math.floor((Date.now() - lastUpdateTime) / 1000);
+    const timerEl = document.getElementById('refresh-timer');
+    if (timerEl) {
+      if (elapsed < 60) {
+        timerEl.textContent = `Atualizado há ${elapsed}s`;
+      } else {
+        const min = Math.floor(elapsed / 60);
+        const sec = elapsed % 60;
+        timerEl.textContent = `Atualizado há ${min}m ${sec}s`;
+      }
+    }
+  }, 1000);
 }
 
-function createProgressBar(greenPercent, redPercent) {
-  const progressContainer = document.getElementById('grafico-total')
-  progressContainer.innerHTML = `
-    <div class="loading-bar-container">
-      <div class="loading-bar-track">
-        <div class="loading-bar-fill-green" style="width: ${greenPercent}%"></div>
-        <div class="loading-bar-fill-red" style="width: ${redPercent}%"></div>
-      </div>
-    </div>
-  `
-}
-
-let dadosGlobais = null
-
+// ── Fetch Status ──
 async function atualizarStatus() {
   try {
-    const response = await fetch('/status')
-    const data = await response.json()
-    dadosGlobais = data
+    const response = await fetch('/status');
+    const data = await response.json();
+    dadosGlobais = data;
 
-    let totalOn = 0
-    let totalOff = 0
+    let totalOn = 0;
+    let totalOff = 0;
 
     for (const condominioData of Object.values(data)) {
-      const cameras = condominioData.cameras || condominioData
-      totalOn += cameras.filter((c) => c.status === 'ON').length
-      totalOff += cameras.filter((c) => c.status === 'OFF').length
+      const cameras = condominioData.cameras || condominioData;
+      totalOn += cameras.filter(c => c.status === 'ON').length;
+      totalOff += cameras.filter(c => c.status === 'OFF').length;
     }
 
-    // Atualiza contadores
-    document.getElementById('total-on').textContent = totalOn
-    document.getElementById('total-off').textContent = totalOff
+    const total = totalOn + totalOff;
+    const percentOnline = total > 0 ? ((totalOn / total) * 100).toFixed(1) : '0.0';
 
-    // Atualiza barras dinâmicas
-    updateCameraBars(totalOn, totalOff)
+    // Update summary stat cards
+    document.getElementById('stat-total').textContent = total;
+    document.getElementById('stat-online').textContent = totalOn;
+    document.getElementById('stat-offline').textContent = totalOff;
+    document.getElementById('stat-percent').textContent = percentOnline + '%';
 
-    // Renderiza com filtros aplicados
-    renderizarCondominios()
+    // Populate UFV filter (only once)
+    populateUfvFilter();
+
+    // Render cards
+    renderizarCondominios();
+
+    // Reset refresh timer
+    startRefreshTimer();
   } catch (err) {
-    console.error('Erro ao buscar status:', err)
-    const container = document.getElementById('container-condominios')
-    container.innerHTML = 'Erro ao carregar dados.'
-    container.classList.remove('loading')
+    console.error('Erro ao buscar status:', err);
+    const container = document.getElementById('container-condominios');
+    container.innerHTML = '<div style="text-align:center;color:#666;padding:40px;">Erro ao carregar dados.</div>';
+    container.classList.remove('loading');
   }
 }
 
+// ── Populate UFV dropdown ──
+let ufvPopulated = false;
+function populateUfvFilter() {
+  if (ufvPopulated || !dadosGlobais) return;
+  const select = document.getElementById('ufv-filter');
+  if (!select) return;
+
+  const names = Object.keys(dadosGlobais).sort((a, b) => a.localeCompare(b));
+  names.forEach(name => {
+    const opt = document.createElement('option');
+    opt.value = name;
+    opt.textContent = name;
+    select.appendChild(opt);
+  });
+  ufvPopulated = true;
+}
+
+// ── Severity classification ──
+function getSeverity(offPercent) {
+  if (offPercent >= 15) return 'critical';
+  if (offPercent >= 10) return 'high';
+  if (offPercent >= 5) return 'warning';
+  return 'ok';
+}
+
+function getOfflineColor(off) {
+  if (off >= 15) return 'red';
+  if (off >= 8) return 'orange';
+  if (off >= 4) return 'yellow';
+  if (off > 0) return 'green';
+  return 'gray';
+}
+
+// ── Sort functions ──
+function sortCondominios(entries, sortType) {
+  return entries.sort(([nameA, dataA], [nameB, dataB]) => {
+    const camerasA = dataA.cameras || dataA;
+    const camerasB = dataB.cameras || dataB;
+    const offA = camerasA.filter(c => c.status === 'OFF').length;
+    const offB = camerasB.filter(c => c.status === 'OFF').length;
+
+    if (sortType === 'alpha') {
+      return nameA.localeCompare(nameB);
+    }
+
+    if (sortType === 'percent') {
+      const pctA = camerasA.length > 0 ? (camerasA.filter(c => c.status === 'ON').length / camerasA.length) : 1;
+      const pctB = camerasB.length > 0 ? (camerasB.filter(c => c.status === 'ON').length / camerasB.length) : 1;
+      return pctA - pctB;
+    }
+
+    // Default: most offline first
+    if (offA > 0 && offB === 0) return -1;
+    if (offA === 0 && offB > 0) return 1;
+    if (offA > 0 && offB > 0) return offB - offA;
+    return nameA.localeCompare(nameB);
+  });
+}
+
+// ── Render Cards ──
 function renderizarCondominios() {
-  if (!dadosGlobais) return
+  if (!dadosGlobais) return;
 
-  const container = document.getElementById('container-condominios')
-  container.innerHTML = ''
-  container.classList.remove('loading')
+  const container = document.getElementById('container-condominios');
+  container.innerHTML = '';
+  container.classList.remove('loading');
 
-  // Verifica se os filtros existem antes de acessá-los
-  const statusFilterElement = document.getElementById('status-filter')
-  const typeFilterElement = document.getElementById('type-filter')
+  // Get filter values
+  const statusFilter = document.getElementById('status-filter')?.value || 'offline';
+  const typeFilter = document.getElementById('type-filter')?.value || 'all';
+  const ufvFilter = document.getElementById('ufv-filter')?.value || 'all';
+  const orderFilter = document.getElementById('order-filter')?.value || 'most-offline';
 
-  const statusFilter = statusFilterElement
-    ? statusFilterElement.value
-    : 'offline'
-  const typeFilter = typeFilterElement ? typeFilterElement.value : 'all'
+  // Filter entries
+  let entries = Object.entries(dadosGlobais);
 
-  // Ordena condomínios: primeiro os com offline (por número decrescente), depois os sem offline
-  const condominiosOrdenados = Object.entries(dadosGlobais).sort(
-    ([nomeA, condominioDataA], [nomeB, condominioDataB]) => {
-      const camerasA = condominioDataA.cameras || condominioDataA
-      const camerasB = condominioDataB.cameras || condominioDataB
+  // UFV filter
+  if (ufvFilter !== 'all') {
+    entries = entries.filter(([name]) => name === ufvFilter);
+  }
 
-      const offA = camerasA.filter((c) => c.status === 'OFF').length
-      const offB = camerasB.filter((c) => c.status === 'OFF').length
+  // Type filter
+  if (typeFilter !== 'all') {
+    entries = entries.filter(([, condData]) => {
+      const metadata = condData.metadata || {};
+      return metadata.empresa?.toString() === typeFilter;
+    });
+  }
 
-      // Se um tem offline e outro não, prioriza o que tem offline
-      if (offA > 0 && offB === 0) return -1
-      if (offA === 0 && offB > 0) return 1
+  // Status filter
+  if (statusFilter === 'offline') {
+    entries = entries.filter(([, condData]) => {
+      const cameras = condData.cameras || condData;
+      const off = cameras.filter(c => c.status === 'OFF').length;
+      return off > 0;
+    });
+  }
 
-      // Se ambos têm offline, ordena por maior número de offline
-      if (offA > 0 && offB > 0) return offB - offA
+  // Sort
+  entries = sortCondominios(entries, orderFilter);
 
-      // Se ambos não têm offline, ordena alfabeticamente
-      return nomeA.localeCompare(nomeB)
-    }
-  )
+  // Render
+  entries.forEach(([name, condData]) => {
+    const cameras = condData.cameras || condData;
+    const total = cameras.length;
+    const on = cameras.filter(c => c.status === 'ON').length;
+    const off = total - on;
+    const percentOnline = total > 0 ? ((on / total) * 100).toFixed(1) : '100.0';
+    const offPercent = total > 0 ? (off / total) * 100 : 0;
 
-  // Renderiza condomínios com filtros aplicados
-  for (const [condominio, condominioData] of condominiosOrdenados) {
-    const cameras = condominioData.cameras || condominioData
-    const metadata = condominioData.metadata || {}
+    const severity = getSeverity(offPercent);
+    const offColor = getOfflineColor(off);
 
-    const on = cameras.filter((c) => c.status === 'ON').length
-    const off = cameras.length - on
+    const card = document.createElement('div');
+    card.className = `site-card severity-${severity}`;
+    card.addEventListener('click', () => {
+      window.location.href = `/condominio/${encodeURIComponent(name)}?condominio=${encodeURIComponent(name)}`;
+    });
 
-    // Filtro de tipo (baseado no código da empresa) - aplicado primeiro
-    if (typeFilter !== 'all') {
-      const codigoEmpresa = metadata.empresa
+    // Camera icon SVG
+    const cameraIcon = `<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>`;
 
-      // Debug simplificado
-      const passa = codigoEmpresa?.toString() === typeFilter
-      console.log(
-        `${
-          passa ? '✅' : '❌'
-        } ${condominio} - Empresa: ${codigoEmpresa} (Filtro: ${typeFilter})`
-      )
+    const offlineText = off > 0
+      ? `<span class="card-offline-count color-${offColor}">${off} offline</span>`
+      : `<span class="card-offline-count color-green">Tudo online</span>`;
 
-      if (codigoEmpresa?.toString() !== typeFilter) continue
-    }
+    card.innerHTML = `
+      <div class="card-header">
+        <div class="card-icon">${cameraIcon}</div>
+        <div class="card-title-block">
+          <span class="card-name" title="${name}">${name}</span>
+          ${offlineText}
+        </div>
+      </div>
+      <div class="card-stats">
+        <span class="card-stat-item">
+          <span class="card-stat-dot orange"></span>
+          Total: ${total}
+        </span>
+        <span class="card-percent">${percentOnline}%</span>
+      </div>
+      <span class="card-link">Ver detalhes →</span>
+    `;
 
-    // Filtro de status (aplicado após o filtro de tipo)
-    if (statusFilter === 'offline' && off === 0) continue
+    container.appendChild(card);
+  });
 
-    const div = document.createElement('div')
-    div.classList.add('condominio')
-    
-    // Adiciona classe de alerta crítico se mais de 50% das câmeras estão offline
-    const totalCameras = cameras.length
-    const percentOffline = totalCameras > 0 ? (off / totalCameras) * 100 : 0
-    if (percentOffline > 50) {
-      div.classList.add('critical-alert')
-    }
-    
-    div.addEventListener('click', () => {
-      window.location.href = `/condominio/${encodeURIComponent(
-        condominio
-      )}?condominio=${encodeURIComponent(condominio)}`
-    })
-
-    const h2 = document.createElement('h2')
-    h2.textContent = condominio
-    div.appendChild(h2)
-
-    if (off > 0) {
-      const p = document.createElement('p')
-      p.classList.add('totais')
-      p.innerHTML = `🔴 <span class="off">${off} offline</span>`
-      div.appendChild(p)
-    }
-
-    container.appendChild(div)
+  // Empty state
+  if (entries.length === 0) {
+    container.innerHTML = '<div style="text-align:center;color:#555;padding:40px;grid-column:1/-1;">Nenhum resultado encontrado para os filtros selecionados.</div>';
   }
 }
+
+// ── Event Listeners ──
 document.addEventListener('DOMContentLoaded', () => {
-  // Event listeners para os filtros (só adiciona se existirem)
-  const statusFilter = document.getElementById('status-filter')
-  const typeFilter = document.getElementById('type-filter')
+  const filters = ['status-filter', 'type-filter', 'ufv-filter', 'order-filter'];
 
-  if (statusFilter) {
-    statusFilter.addEventListener('change', renderizarCondominios)
-  }
+  filters.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('change', () => {
+        // When selecting a type, auto-set status to "Todos"
+        if (id === 'type-filter' && el.value !== 'all') {
+          const statusEl = document.getElementById('status-filter');
+          if (statusEl) statusEl.value = 'all';
+        }
+        renderizarCondominios();
+      });
+    }
+  });
+});
 
-  if (typeFilter) {
-    typeFilter.addEventListener('change', (e) => {
-      // Quando selecionar Usinas ou Corporativo, muda automaticamente para "Todos"
-      if (e.target.value !== 'all' && statusFilter) {
-        statusFilter.value = 'all'
-      }
-      renderizarCondominios()
-    })
-  }
-})
-
-atualizarStatus()
-setInterval(atualizarStatus, 600000) // Atualiza a cada 10 minutos
+// ── Start ──
+atualizarStatus();
+setInterval(atualizarStatus, 600000); // 10 minutes
