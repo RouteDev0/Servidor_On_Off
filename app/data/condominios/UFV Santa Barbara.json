@@ -1,7 +1,7 @@
 {
   "particao": "01",
   "empresa": 3,
-  "ocorrencia": 968,
+  "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
   "dvs": [
@@ -21,7 +21,7 @@
           "name": "D2 Bullet 05",
           "canal": "201",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 2,
           "complemento": "Bullet 05"
         },
         {
@@ -35,21 +35,21 @@
           "name": "D16 PORTAO FUNDOS - SANTA BARBARA",
           "canal": "1601",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 6,
           "complemento": "PORTAO FUNDOS - SANTA BARBARA"
         },
         {
           "name": "D17 SBO01-PTZ03",
           "canal": "1701",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 3,
           "complemento": "SBO01-PTZ03"
         },
         {
           "name": "D18 PTZ 01 - SANTA BARBARA",
           "canal": "1801",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 4,
           "complemento": "PTZ 01 - SANTA BARBARA"
         },
         {
@@ -63,7 +63,7 @@
           "name": "D21 PTZ 02 - SANTA BARBARA",
           "canal": "2101",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 5,
           "complemento": "PTZ 02 - SANTA BARBARA"
         }
       ],

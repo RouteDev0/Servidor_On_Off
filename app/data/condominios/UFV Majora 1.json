@@ -1,7 +1,7 @@
 {
   "particao": "01",
   "empresa": 3,
-  "ocorrencia": 968,
+  "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
   "dvs": [
@@ -21,28 +21,28 @@
           "name": "D2 PTZ 01 - FUNDOS - MARAJOARA",
           "canal": "201",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 2,
           "complemento": "PTZ 01 - FUNDOS - MARAJOARA"
         },
         {
           "name": "D3 PTZ 02 - FRENTE - MARAJOARA",
           "canal": "301",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 3,
           "complemento": "PTZ 02 - FRENTE - MARAJOARA"
         },
         {
           "name": "D4 OEM EXT - MARAJOARA",
           "canal": "401",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 4,
           "complemento": "OEM EXT - MARAJOARA"
         },
         {
           "name": "D5 OEM INT - MARAJOARA",
           "canal": "501",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 5,
           "complemento": "OEM INT - MARAJOARA"
         }
       ],

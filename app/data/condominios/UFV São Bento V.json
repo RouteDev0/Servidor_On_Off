@@ -1,0 +1,173 @@
+{
+  "particao": "01",
+  "empresa": 4,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvrs": [
+    {
+      "protocol": "intelbras",
+      "ip": "10.200.65.200",
+      "porta": 80,
+      "usuario": "thopen",
+      "senha": "Th0@2025",
+      "cliente": "2040",
+      "cameras": [
+        {
+          "name": "SBT05-CF-01",
+          "canal": "1",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "SBT05-CF-01"
+        },
+        {
+          "name": "SBT05-PTZ-02",
+          "canal": "2",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "SBT05-PTZ-02"
+        },
+        {
+          "name": "SBT05-PTZ-01",
+          "canal": "3",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "SBT05-PTZ-01"
+        },
+        {
+          "name": "SBT05-CF-11",
+          "canal": "4",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "SBT05-CF-11"
+        },
+        {
+          "name": "SBT05-CF-15",
+          "canal": "5",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "SBT05-CF-15"
+        },
+        {
+          "name": "SBT05-CF-14",
+          "canal": "6",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "SBT05-CF-14"
+        },
+        {
+          "name": "SBT05-CF-03",
+          "canal": "7",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "SBT05-CF-03"
+        },
+        {
+          "name": "SBT05-CF-06",
+          "canal": "8",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "SBT05-CF-06"
+        },
+        {
+          "name": "SBT05-CF-13",
+          "canal": "9",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "SBT05-CF-13"
+        },
+        {
+          "name": "SBT05CF-02",
+          "canal": "10",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "SBT05CF-02"
+        },
+        {
+          "name": "SBT05-CF-07",
+          "canal": "11",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "SBT05-CF-07"
+        },
+        {
+          "name": "SBT05-CF-04",
+          "canal": "12",
+          "identificacao": "E",
+          "setor": 12,
+          "complemento": "SBT05-CF-04"
+        },
+        {
+          "name": "SBT05-CF-10",
+          "canal": "13",
+          "identificacao": "E",
+          "setor": 13,
+          "complemento": "SBT05-CF-10"
+        },
+        {
+          "name": "SBT05-CF-09",
+          "canal": "14",
+          "identificacao": "E",
+          "setor": 14,
+          "complemento": "SBT05-CF-09"
+        },
+        {
+          "name": "SBT05-CF-08",
+          "canal": "15",
+          "identificacao": "E",
+          "setor": 15,
+          "complemento": "SBT05-CF-08"
+        },
+        {
+          "name": "SBT05-VIP INTELBRAS",
+          "canal": "16",
+          "identificacao": "E",
+          "setor": 16,
+          "complemento": "SBT05-VIP INTELBRAS"
+        },
+        {
+          "name": "SBT05-PTZ-06",
+          "canal": "17",
+          "identificacao": "E",
+          "setor": 17,
+          "complemento": "SBT05-PTZ-06"
+        },
+        {
+          "name": "SBT05-CF-16",
+          "canal": "18",
+          "identificacao": "E",
+          "setor": 18,
+          "complemento": "SBT05-CF-16"
+        },
+        {
+          "name": "SBT05-CF-05",
+          "canal": "19",
+          "identificacao": "E",
+          "setor": 19,
+          "complemento": "SBT05-CF-05"
+        },
+        {
+          "name": "SBT05-PTZ-04",
+          "canal": "20",
+          "identificacao": "E",
+          "setor": 20,
+          "complemento": "SBT05-PTZ-04"
+        },
+        {
+          "name": "SBT05-CF-12",
+          "canal": "21",
+          "identificacao": "E",
+          "setor": 21,
+          "complemento": "SBT05-CF-12"
+        },
+        {
+          "name": "SBT05-Portao",
+          "canal": "22",
+          "identificacao": "E",
+          "setor": 22,
+          "complemento": "SBT05-Portao"
+        }
+      ]
+    }
+  ]
+}

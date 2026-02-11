@@ -1,0 +1,101 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvs": [
+    {
+      "ip": "10.200.54.30",
+      "porta": 80,
+      "cliente": "2031",
+      "name": "IBATE 2 HIKIVISION",
+      "cameras": [
+        {
+          "name": "IBT02-PTZ04",
+          "canal": "801",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "IBT02-PTZ04"
+        },
+        {
+          "name": "IBT02-PTZ05",
+          "canal": "901",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "PTZ 05 - IBATE 01"
+        },
+        {
+          "name": "BT02-PTZ06",
+          "canal": "1001",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "BT02-PTZ06"
+        }
+      ],
+      "protocol": "hikvision",
+      "usuario": "thopen",
+      "senha": "Th0@2025"
+    },
+    {
+      "protocol": "intelbras",
+      "ip": "10.200.53.31",
+      "porta": 80,
+      "usuario": "thopen",
+      "senha": "Th0@2025",
+      "cliente": "2032",
+      "name": "IBATE 2 INTELBRAS",
+      "cameras": [
+        {
+          "name": "INTELBRAS - PORTAO - IBATE 02",
+          "canal": "1",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "INTELBRAS - PORTAO - IBATE 02"
+        },
+        {
+          "name": "INTELBRAS - OeM INT - IBATE 02",
+          "canal": "2",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "INTELBRAS - OeM INT - IBATE 02"
+        },
+        {
+          "name": "INTELBRAS - OeM EXT - IBATE 02",
+          "canal": "3",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "INTELBRAS - OeM EXT - IBATE 02"
+        },
+        {
+          "name": "INTELBRAS - PTZ 02 - IBATE 02",
+          "canal": "4",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "INTELBRAS - PTZ 02 - IBATE 02"
+        },
+        {
+          "name": "INTELBRAS - SE - IBATE 02",
+          "canal": "5",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "INTELBRAS - SE - IBATE 02"
+        },
+        {
+          "name": "INTELBRAS - PTZ 03 - IBATE 02",
+          "canal": "6",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "INTELBRAS - PTZ 03 - IBATE 02"
+        },
+        {
+          "name": "INTELBRAS - PTZ 01 - IBATE 02",
+          "canal": "7",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "INTELBRAS - PTZ 01 - IBATE 02"
+        }
+      ]
+    }
+  ]
+}

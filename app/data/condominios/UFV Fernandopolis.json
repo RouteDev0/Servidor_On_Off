@@ -1,0 +1,117 @@
+{
+  "particao": "01",
+  "empresa": 3,
+  "ocorrencia": 960,
+  "codigoconjuntodeocorrencias": 7,
+  "codigomaquina": 897,
+  "dvrs": [
+    {
+      "cliente": "2061",
+      "protocol": "hikvision",
+      "ip": "10.200.84.200",
+      "porta": 80,
+      "usuario": "admin",
+      "senha": "flt030825",
+      "cameras": [
+        {
+          "name": "Bullet 01 O - FERNANDOPOLIS",
+          "canal": "101",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "D1"
+        },
+        {
+          "name": "Bullet 02 O - FERNANDOPOLIS",
+          "canal": "103",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "D3"
+        },
+        {
+          "name": "Bullet 03 O - FERNANDOPOLIS",
+          "canal": "105",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "D5"
+        },
+        {
+          "name": "Bullet 04 O - FERNANDOPOLIS",
+          "canal": "107",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "D7"
+        },
+        {
+          "name": "Bullet 05 O - FERNANDOPOLIS",
+          "canal": "109",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "D9"
+        },
+        {
+          "name": "Bullet 06 O - FERNANDOPOLIS",
+          "canal": "1101",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "D11"
+        },
+        {
+          "name": "Bullet 07 O - FERNANDOPOLIS",
+          "canal": "1301",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "D13"
+        },
+        {
+          "name": "Bullet 08 O - FERNANDOPOLIS",
+          "canal": "1501",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "D15"
+        },
+        {
+          "name": "Bullet 09 O - FERNANDOPOLIS",
+          "canal": "1701",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "D17"
+        },
+        {
+          "name": "Bullet 10 O - FERNANDOPOLIS",
+          "canal": "1901",
+          "identificacao": "E",
+          "setor": 10,
+          "complemento": "D19"
+        },
+        {
+          "name": "Bullet 11 O - FERNANDOPOLIS",
+          "canal": "2101",
+          "identificacao": "E",
+          "setor": 11,
+          "complemento": "D21"
+        },
+        {
+          "name": "PTZ 01 - FERNANDOPOLIS",
+          "canal": "2301",
+          "identificacao": "E",
+          "setor": 12,
+          "complemento": "D23"
+        },
+        {
+          "name": "OEM - FERNANDOPOLIS",
+          "canal": "2501",
+          "identificacao": "E",
+          "setor": 13,
+          "complemento": "D25"
+        },
+        {
+          "name": "Portao - FERNANDOPOLIS",
+          "canal": "2601",
+          "identificacao": "E",
+          "setor": 14,
+          "complemento": "D25"
+        }
+      ]
+    }
+  ]
+}

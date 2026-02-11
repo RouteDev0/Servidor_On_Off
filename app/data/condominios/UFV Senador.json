@@ -1,1 +1,75 @@
-"Sem acesso a VPN"
+{
+  "particao": "01",
+  "empresa": 4,
+  "ocorrencia": 960,
+  "codigomaquina": 897,
+  "codigoconjuntodeocorrencias": 7,
+  "dvrs": [
+    {
+      "protocol": "intelbras",
+      "ip": "10.200.70.200",
+      "porta": 80,
+      "usuario": "admin",
+      "senha": "Mudar@2025",
+      "cliente": "9999",
+      "cameras": [
+        {
+          "name": "PTZ C Senador 1",
+          "canal": "1",
+          "identificacao": "E",
+          "setor": 1,
+          "complemento": "CAM1 - PTZ C Senador 1"
+        },
+        {
+          "name": "PTZ B Senador 1",
+          "canal": "2",
+          "identificacao": "E",
+          "setor": 2,
+          "complemento": "CAM2 - PTZ B Senador 1"
+        },
+        {
+          "name": "PTZ D Senador 1",
+          "canal": "3",
+          "identificacao": "E",
+          "setor": 3,
+          "complemento": "CAM3 - PTZ D Senador 1"
+        },
+        {
+          "name": "OEM INT",
+          "canal": "4",
+          "identificacao": "E",
+          "setor": 4,
+          "complemento": "CAM4 - OEM Interno"
+        },
+        {
+          "name": "PTZ E Senador 1",
+          "canal": "5",
+          "identificacao": "E",
+          "setor": 5,
+          "complemento": "CAM5 - PTZ E Senador 1"
+        },
+        {
+          "name": "PORTAO",
+          "canal": "6",
+          "identificacao": "E",
+          "setor": 6,
+          "complemento": "CAM6 - Portão"
+        },
+        {
+          "name": "OEM EXT",
+          "canal": "7",
+          "identificacao": "E",
+          "setor": 7,
+          "complemento": "CAM7 - OEM Externo"
+        },
+        {
+          "name": "Poste B",
+          "canal": "8",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "CAM8 - Poste B"
+        }
+      ]
+    }
+  ]
+}

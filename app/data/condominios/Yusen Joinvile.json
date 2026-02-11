@@ -1,139 +1,139 @@
 {
   "particao": "01",
   "empresa": 4,
-  "ocorrencia": 968,
+  "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
   "dvs": [
     {
       "ip": "189.45.205.222",
       "porta": 10100,
-      "cliente": "0450",
+      "cliente": "9024",
       "cameras": [
         {
           "name": "D01 YLBR SC_ PÁTIO FRONTAL K6",
           "canal": "101",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 35,
           "complemento": "PÁTIO FRONTAL K6"
         },
         {
           "name": "D02 YLBR SC_ K FUNDOS",
           "canal": "201",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 36,
           "complemento": "K FUNDOS"
         },
         {
           "name": "D03 IPCÂMERA 03",
           "canal": "301",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 37,
           "complemento": "IPCÂMERA 03"
         },
         {
           "name": "D04 YLBR SC_PATIO FRONTAL K5",
           "canal": "401",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 38,
           "complemento": "PATIO FRONTAL K5"
         },
         {
           "name": "D05 CONFERÊNCIA",
           "canal": "501",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 39,
           "complemento": "CONFERÊNCIA"
         },
         {
           "name": "D06 ARMAZENAGEM 03",
           "canal": "601",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 40,
           "complemento": "ARMAZENAGEM 03"
         },
         {
           "name": "D07 ÁREA DE REVISTA",
           "canal": "701",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 41,
           "complemento": "ÁREA DE REVISTA"
         },
         {
           "name": "D08 MEZANINO SALAS",
           "canal": "801",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 42,
           "complemento": "MEZANINO SALAS"
         },
         {
           "name": "D09 PT EMERG TRASEIRA",
           "canal": "901",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 43,
           "complemento": "PT EMERG TRASEIRA"
         },
         {
           "name": "D10 ARMAZENAGEM 02",
           "canal": "1001",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 44,
           "complemento": "ARMAZENAGEM 02"
         },
         {
           "name": "D11 ARMAZENAGEM 01",
           "canal": "1101",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 45,
           "complemento": "ARMAZENAGEM 01"
         },
         {
           "name": "D12 CÂMERA 01",
           "canal": "1201",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 46,
           "complemento": "CÂMERA 01"
         },
         {
           "name": "D13 CÂMERA 01",
           "canal": "1301",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 47,
           "complemento": "CÂMERA 01"
         },
         {
           "name": "D14 IPCÂMERA 14",
           "canal": "1401",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 48,
           "complemento": "IPCÂMERA 14"
         },
         {
           "name": "D15 IPCÂMERA 15",
           "canal": "1501",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 49,
           "complemento": "IPCÂMERA 15"
         },
         {
           "name": "D16 IPCÂMERA 16",
           "canal": "1601",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 50,
           "complemento": "IPCÂMERA 16"
         },
         {
           "name": "D17 CÂMERA 01",
           "canal": "1701",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 51,
           "complemento": "CÂMERA 01"
         },
         {
           "name": "D18 CÂMERA 01",
           "canal": "1801",
           "identificacao": "E",
-          "setor": 1,
+          "setor": 52,
           "complemento": "CÂMERA 01"
         }
       ],

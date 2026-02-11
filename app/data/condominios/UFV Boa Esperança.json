@@ -4,60 +4,74 @@
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
-  "dvs": [
+  "cliente": "2025",
+  "dvrs": [
     {
-      "ip": "10.200.52.2",
+      "ip": "10.200.60.18",
       "porta": 80,
-      "cliente": "2028",
       "cameras": [
         {
-          "name": "D1 OeM INT - GUARATINGUETA 05",
+          "name": "OeM EXT",
           "canal": "101",
           "identificacao": "E",
           "setor": 1,
-          "complemento": "OeM INT - GUARATINGUETA 05"
+          "complemento": "PORTAO 1B - ARACOIABA 02"
         },
         {
-          "name": "D2 Portao - GUARATINGUETA 5",
+          "name": "OeM INT",
           "canal": "201",
           "identificacao": "E",
           "setor": 2,
-          "complemento": "Portao - GUARATINGUETA 5"
+          "complemento": "SOeM INT"
         },
         {
-          "name": "D3 PTZ 01 - GUARATINGUETA 05",
+          "name": "PORTAO",
           "canal": "301",
           "identificacao": "E",
           "setor": 3,
-          "complemento": "PTZ 01 - GUARATINGUETA 05"
+          "complemento": "PORTAO"
         },
         {
-          "name": "D4 OeM EXT - GUARATINGUETA 05",
+          "name": "PTZ 01",
           "canal": "401",
           "identificacao": "E",
           "setor": 4,
-          "complemento": "OeM EXT - GUARATINGUETA 05"
+          "complemento": "PTZ 01"
         },
         {
-          "name": "D5 PTZ 02 - GUARATINGUETA 05",
+          "name": "BULLET-02A",
           "canal": "501",
           "identificacao": "E",
           "setor": 5,
-          "complemento": "PTZ 02 - GUARATINGUETA 05"
+          "complemento": "BULLET-02A"
         },
         {
-          "name": "D6 PTZ 03 - GUARATINGUETA 05",
+          "name": "BULLET-03B",
           "canal": "601",
           "identificacao": "E",
           "setor": 6,
-          "complemento": "PTZ 03 - GUARATINGUETA 05"
+          "complemento": "BULLET-03B"
         },
         {
-          "name": "D7 SE - GUARATINGUETA 05",
+          "name": "PTZ 02",
           "canal": "701",
           "identificacao": "E",
           "setor": 7,
-          "complemento": "SE - GUARATINGUETA 05"
+          "complemento": "PTZ 02"
+        },
+        {
+          "name": "PTZ 03",
+          "canal": "801",
+          "identificacao": "E",
+          "setor": 8,
+          "complemento": "PTZ 03"
+        },
+        {
+          "name": "PTZ 04",
+          "canal": "901",
+          "identificacao": "E",
+          "setor": 9,
+          "complemento": "PTZ 04"
         }
       ],
       "protocol": "hikvision",

@@ -179,14 +179,6 @@
           "codigomaquina": 897,
           "setor": 21,
           "complemento": "Camera 21"
-        },
-        {
-          "name": "Camera 22",
-          "canal": "4301",
-          "identificacao": "E",
-          "codigomaquina": 897,
-          "setor": 22,
-          "complemento": "Camera 22"
         }
       ],
       "usuario": "admin",
