@@ -40,13 +40,13 @@ async function atualizarStatus() {
     }
 
     const total = totalOn + totalOff;
-    const percentOnline = total > 0 ? ((totalOn / total) * 100).toFixed(1) : '0.0';
+    const percentOffline = total > 0 ? ((totalOff / total) * 100).toFixed(1) : '0.0';
 
     // Update summary stat cards
     document.getElementById('stat-total').textContent = total;
     document.getElementById('stat-online').textContent = totalOn;
     document.getElementById('stat-offline').textContent = totalOff;
-    document.getElementById('stat-percent').textContent = percentOnline + '%';
+    document.getElementById('stat-percent').textContent = percentOffline + '%';
 
     // Render cards
     renderizarCondominios();
@@ -92,9 +92,10 @@ function sortCondominios(entries, sortType) {
     }
 
     if (sortType === 'percent') {
-      const pctA = camerasA.length > 0 ? (camerasA.filter(c => c.status === 'ON').length / camerasA.length) : 1;
-      const pctB = camerasB.length > 0 ? (camerasB.filter(c => c.status === 'ON').length / camerasB.length) : 1;
-      return pctA - pctB;
+      // Sort by offline percentage (descending)
+      const pctA = camerasA.length > 0 ? (camerasA.filter(c => c.status === 'OFF').length / camerasA.length) : 0;
+      const pctB = camerasB.length > 0 ? (camerasB.filter(c => c.status === 'OFF').length / camerasB.length) : 0;
+      return pctB - pctA;
     }
 
     // Default: most offline first
@@ -147,8 +148,8 @@ function renderizarCondominios() {
     const total = cameras.length;
     const on = cameras.filter(c => c.status === 'ON').length;
     const off = total - on;
-    const percentOnline = total > 0 ? ((on / total) * 100).toFixed(1) : '100.0';
     const offPercent = total > 0 ? (off / total) * 100 : 0;
+    const percentOfflineStr = offPercent.toFixed(1);
 
     const severity = getSeverity(offPercent);
     const offColor = getOfflineColor(off);
@@ -163,7 +164,7 @@ function renderizarCondominios() {
     const cameraIcon = `<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>`;
 
     const offlineText = off > 0
-      ? `<span class="card-offline-count color-${offColor}">${off} offline</span>`
+      ? `<span class="card-offline-count color-${offColor}">${off} offline (${percentOfflineStr}%)</span>`
       : `<span class="card-offline-count color-green">Tudo online</span>`;
 
     card.innerHTML = `
@@ -179,7 +180,6 @@ function renderizarCondominios() {
           <span class="card-stat-dot orange"></span>
           Total: ${total}
         </span>
-        <span class="card-percent">${percentOnline}%</span>
       </div>
       <span class="card-link">Ver detalhes →</span>
     `;
