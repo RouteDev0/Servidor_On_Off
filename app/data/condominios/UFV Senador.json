@@ -1,6 +1,6 @@
 {
   "particao": "01",
-  "empresa": 4,
+  "empresa": 3,
   "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
@@ -11,7 +11,7 @@
       "porta": 80,
       "usuario": "admin",
       "senha": "Mudar@2025",
-      "cliente": "9999",
+      "cliente": "2045",
       "cameras": [
         {
           "name": "PTZ C Senador 1",

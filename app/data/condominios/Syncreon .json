@@ -1,14 +1,14 @@
 {
   "particao": "01",
   "empresa": 4,
-  "ocorrencia": 968,
+  "ocorrencia": 960,
   "codigomaquina": 897,
   "codigoconjuntodeocorrencias": 7,
   "dvs": [
     {
       "ip": "179.125.68.97",
       "porta": 8007,
-      "cliente": "10717",
+      "cliente": "9999",
       "cameras": [
         {
           "name": "D17 Câmera 15",
@@ -105,7 +105,7 @@
     {
       "ip": "179.125.68.97",
       "porta": 8005,
-      "cliente": "10717",
+      "cliente": "9999",
       "cameras": [
         {
           "name": "D06 Camera 17",
@@ -129,7 +129,7 @@
     {
       "ip": "179.125.68.97",
       "porta": 8006,
-      "cliente": "10717",
+      "cliente": "9999",
       "cameras": [
         {
           "name": "D13 RECEPCAO",
@@ -167,7 +167,7 @@
     {
       "ip": "179.125.68.97",
       "porta": 8009,
-      "cliente": "10717",
+      "cliente": "9999",
       "cameras": [
         {
           "name": "D08 D6 CAMERA EX. DOCAS 13,14",

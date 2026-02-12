@@ -1,6 +1,6 @@
 {
   "cliente": "9092",
-  "particao": "",
+  "particao": "01",
   "empresa": 4,
   "ocorrencia": 960,
   "codigoconjuntodeocorrencias": 7,
@@ -9,7 +9,6 @@
       "ip": "valesantafe.ddns.net",
       "porta": 62080,
       "protocol": "hikvision",
-      "cliente": "9092",
       "cameras": [
         {
           "name": "Camera Termica 1 ",

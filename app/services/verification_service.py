@@ -19,26 +19,28 @@ class VerificationService:
         self.cache_manager = CacheManager()
         self.ultimo_estado: Dict[str, bool] = {}
         self.status_atual: Dict[str, List[Dict[str, str]]] = {}
-        
+
         # Pool de conexões HTTP reutilizável para melhor performance
         self.http_session = None
         if Config.USE_CONNECTION_POOL:
             import requests
             from requests.adapters import HTTPAdapter
             from urllib3.util.retry import Retry
-            
+
             self.http_session = requests.Session()
-            
+
             # Configurar adapter com pool de conexões
             adapter = HTTPAdapter(
                 pool_connections=Config.CONNECTION_POOL_SIZE,
                 pool_maxsize=Config.CONNECTION_POOL_MAXSIZE,
-                max_retries=0  # Trataremos retry manualmente
+                max_retries=0,  # Trataremos retry manualmente
             )
-            self.http_session.mount('http://', adapter)
-            self.http_session.mount('https://', adapter)
-            
-            print(f"[INFO] ✅ Pool de conexões HTTP ativado - {Config.CONNECTION_POOL_SIZE} conexões")
+            self.http_session.mount("http://", adapter)
+            self.http_session.mount("https://", adapter)
+
+            print(
+                f"[INFO] ✅ Pool de conexões HTTP ativado - {Config.CONNECTION_POOL_SIZE} conexões"
+            )
 
     def verificar_camera_individual(
         self,
@@ -48,11 +50,11 @@ class VerificationService:
     ) -> tuple[str, str]:
         """
         Dispatcher que roteia para o método de verificação apropriado baseado no protocolo do DVR
-        
+
         O protocolo é injetado pelo condominio_service como '_dvr_protocol'
         """
         protocol = ProtocolUtils.get_protocol_from_camera(cam)
-        
+
         if protocol == "intelbras":
             return self.verificar_camera_intelbras(cam, nome_condominio, config_global)
         else:  # hikvision or default
@@ -95,7 +97,7 @@ class VerificationService:
                 cam_info = ConfigManager.construir_camera_info(
                     cam, nome_condominio, config_global
                 )
-                cam_info["ocorrencia"] = "941"
+                cam_info["ocorrencia"] = "961"
                 cam_info["complemento"] = f"{nome} voltou online"
                 enviar_alerta(cam_info, nome_condominio)
             if estado_anterior != resultado_cache and not resultado_cache:
@@ -108,47 +110,48 @@ class VerificationService:
 
         # Verificação real via snapshot API Hikvision
         url = f"http://{ip}:{porta}/ISAPI/Streaming/channels/{canal}/picture"
-        
+
         # Retry com backoff exponencial
         online = False
         ultima_exception = None
-        
+
         for tentativa in range(Config.TENTATIVAS_RETRY + 1):
             try:
                 # Usa pool de conexões se disponível, senão cria nova requisição
                 if self.http_session:
                     resp = self.http_session.get(
-                        url, 
-                        auth=HTTPDigestAuth(usuario, senha), 
-                        timeout=Config.TIMEOUT_VERIFICACAO
+                        url,
+                        auth=HTTPDigestAuth(usuario, senha),
+                        timeout=Config.TIMEOUT_VERIFICACAO,
                     )
                 else:
                     import requests
+
                     resp = requests.get(
-                        url, 
-                        auth=HTTPDigestAuth(usuario, senha), 
-                        timeout=Config.TIMEOUT_VERIFICACAO
+                        url,
+                        auth=HTTPDigestAuth(usuario, senha),
+                        timeout=Config.TIMEOUT_VERIFICACAO,
                     )
-                
+
                 online = resp.status_code == 200 and resp.headers.get(
                     "Content-Type", ""
                 ).startswith("image")
-                
+
                 if online:
                     break  # Sucesso, sai do loop de retry
-                    
+
             except Exception as e:
                 ultima_exception = e
                 if tentativa < Config.TENTATIVAS_RETRY:
                     # Backoff exponencial: 1s, 2s, 4s...
-                    backoff = Config.RETRY_BACKOFF * (2 ** tentativa)
+                    backoff = Config.RETRY_BACKOFF * (2**tentativa)
                     time.sleep(backoff)
                 continue
-        
+
         # Log apenas se falhou após todas as tentativas
         if not online and ultima_exception:
             print(f"[ERRO] {nome}: {ultima_exception}")
-            
+
         status_str = "ON" if online else "OFF"
         print(f"📷 {nome} está {status_str}")
 
@@ -167,7 +170,7 @@ class VerificationService:
             cam_info = ConfigManager.construir_camera_info(
                 cam, nome_condominio, config_global
             )
-            cam_info["ocorrencia"] = "941"
+            cam_info["ocorrencia"] = "961"
             cam_info["complemento"] = f"{nome} voltou online"
             enviar_alerta(cam_info, nome_condominio)
 
@@ -189,10 +192,10 @@ class VerificationService:
     ) -> tuple[str, str]:
         """
         Verifica uma câmera Intelbras usando snapshot CGI (HTTPDigestAuth)
-        
+
         Protocolo CGI (Dahua): /cgi-bin/snapshot.cgi?channel={n}
         Canais em formato numérico simples: 1, 2, 3, 4...
-        
+
         Validação em cascata:
         1. Conectividade TCP (porta configurada)
         2. Autenticação Digest (Status 200)
@@ -231,7 +234,7 @@ class VerificationService:
                 cam_info = ConfigManager.construir_camera_info(
                     cam, nome_condominio, config_global
                 )
-                cam_info["ocorrencia"] = "941"
+                cam_info["ocorrencia"] = "961"
                 cam_info["complemento"] = f"{nome} voltou online"
                 enviar_alerta(cam_info, nome_condominio)
             if estado_anterior != resultado_cache and not resultado_cache:
@@ -244,60 +247,67 @@ class VerificationService:
 
         # Verificação real via snapshot CGI Intelbras
         url = f"http://{ip}:{porta}/cgi-bin/snapshot.cgi?channel={canal}"
-        
+
         # Retry com backoff exponencial
         online = False
         ultima_exception = None
         content_length = 0
-        
+
         for tentativa in range(Config.TENTATIVAS_RETRY + 1):
             try:
                 # Usa pool de conexões se disponível
                 if self.http_session:
                     resp = self.http_session.get(
-                        url, 
-                        auth=HTTPDigestAuth(usuario, senha), 
-                        timeout=Config.TIMEOUT_VERIFICACAO
+                        url,
+                        auth=HTTPDigestAuth(usuario, senha),
+                        timeout=Config.TIMEOUT_VERIFICACAO,
                     )
                 else:
                     import requests
+
                     resp = requests.get(
-                        url, 
-                        auth=HTTPDigestAuth(usuario, senha), 
-                        timeout=Config.TIMEOUT_VERIFICACAO
+                        url,
+                        auth=HTTPDigestAuth(usuario, senha),
+                        timeout=Config.TIMEOUT_VERIFICACAO,
                     )
-                
+
                 # Validação Intelbras:
                 # 1. Status 200 (autenticação OK)
                 # 2. Content-Type deve ser image/jpeg
                 # 3. Content-Length deve ser maior que MIN_SIZE (evita imagens "Sem Sinal")
-                content_type_ok = resp.headers.get("Content-Type", "").startswith("image")
+                content_type_ok = resp.headers.get("Content-Type", "").startswith(
+                    "image"
+                )
                 content_length = int(resp.headers.get("Content-Length", 0))
                 size_ok = content_length >= Config.INTELBRAS_MIN_IMAGE_SIZE
-                
+
                 online = resp.status_code == 200 and content_type_ok and size_ok
-                
+
                 if online:
                     break  # Sucesso, sai do loop de retry
                 elif resp.status_code == 200 and content_type_ok and not size_ok:
                     # Imagem muito pequena - provavelmente "Sem Sinal"
-                    print(f"[⚠️] {nome}: Imagem muito pequena ({content_length} bytes) - possível 'Sem Sinal'")
+                    print(
+                        f"[⚠️] {nome}: Imagem muito pequena ({content_length} bytes) - possível 'Sem Sinal'"
+                    )
                     break  # Não continua tentando
-                    
+
             except Exception as e:
                 ultima_exception = e
                 if tentativa < Config.TENTATIVAS_RETRY:
                     # Backoff exponencial: 1s, 2s, 4s...
-                    backoff = Config.RETRY_BACKOFF * (2 ** tentativa)
+                    backoff = Config.RETRY_BACKOFF * (2**tentativa)
                     time.sleep(backoff)
                 continue
-        
+
         # Log apenas se falhou após todas as tentativas
         if not online and ultima_exception:
             print(f"[ERRO] {nome} [Intelbras]: {ultima_exception}")
         elif not online and content_length > 0:
-            print(f"[INFO] {nome} [Intelbras]: Offline ou sem sinal (image size: {content_length} bytes)")
-            
+            print(
+                f"[INFO] {nome} [Intelbras]: Offline ou sem sinal (image size: {content_length} bytes)"
+            )
+
         status_str = "ON" if online else "OFF"
         print(f"📷 {nome} está {status_str} [Intelbras CGI]")
 
@@ -316,7 +326,7 @@ class VerificationService:
             cam_info = ConfigManager.construir_camera_info(
                 cam, nome_condominio, config_global
             )
-            cam_info["ocorrencia"] = "941"
+            cam_info["ocorrencia"] = "961"
             cam_info["complemento"] = f"{nome} voltou online"
             enviar_alerta(cam_info, nome_condominio)
 

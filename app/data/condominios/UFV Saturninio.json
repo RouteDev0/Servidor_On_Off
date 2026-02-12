@@ -1,5 +1,4 @@
 {
-  "cliente": "2016",
   "particao": "01",
   "empresa": 3,
   "ocorrencia": 960,
@@ -10,7 +9,7 @@
       "ip": "172.16.11.150",
       "porta": 80,
       "protocol": "hikvision",
-      "cliente": "9185",
+      "cliente": "2016",
       "cameras": [
         {
           "name": "Camera 01",
