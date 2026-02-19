@@ -122,8 +122,8 @@
         }
       ],
       "protocol": "hikvision",
-      "ip": "192.168.1.112",
-      "porta": 59089,
+      "ip": "10.200.95.89",
+      "porta": 80,
       "usuario": "admin",
       "senha": "flt030825"
     },
@@ -209,8 +209,8 @@
         }
       ],
       "protocol": "hikvision",
-      "ip": "192.168.1.112",
-      "porta": 59090,
+      "ip": "10.200.95.90",
+      "porta": 80,
       "usuario": "admin",
       "senha": "flt030825"
     }
