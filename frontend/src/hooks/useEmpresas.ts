@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { api } from '../api/client';
-import { Empresa } from '../types';
+import type { Empresa } from '../types';
 
 export const useEmpresas = () => {
     const [empresas, setEmpresas] = useState<Empresa[]>([]);

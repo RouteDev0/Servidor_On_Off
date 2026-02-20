@@ -1,6 +1,6 @@
 import React from 'react';
-import { ClienteStatus } from '../../types';
-import { CameraStatusBadge } from '../CameraStatusBadge';
+import type { ClienteStatus } from '../types';
+import { CameraStatusBadge } from './CameraStatusBadge';
 import { BuildingIcon } from 'lucide-react';
 
 interface Props {

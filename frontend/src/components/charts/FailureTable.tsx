@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReportFalhas } from '../../types';
+import type { ReportFalhas } from '../../types';
 
 interface Props {
     data: ReportFalhas | null;

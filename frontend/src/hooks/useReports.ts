@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { api } from '../api/client';
-import { ReportSla, ReportFalhas } from '../types';
+import type { ReportSla, ReportFalhas } from '../types';
 import { useEmpresa } from '../contexts/EmpresaContext';
 
 export const useReports = (days: number = 7) => {

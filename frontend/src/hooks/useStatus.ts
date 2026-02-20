@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { api } from '../api/client';
-import { StatusGeral } from '../types';
+import type { StatusGeral } from '../types';
 import { useEmpresa } from '../contexts/EmpresaContext';
 
 export const useStatus = () => {

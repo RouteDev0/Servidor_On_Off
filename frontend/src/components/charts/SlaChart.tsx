@@ -9,7 +9,7 @@ import {
     ResponsiveContainer,
     Cell
 } from 'recharts';
-import { ReportSla } from '../../types';
+import type { ReportSla } from '../../types';
 
 interface Props {
     data: ReportSla | null;
@@ -50,7 +50,7 @@ export const SlaChart: React.FC<Props> = ({ data }) => {
                         />
                         <Tooltip
                             contentStyle={{ background: 'var(--bg-surface)', border: 'var(--glass-border)', borderRadius: '8px' }}
-                            formatter={(val: number) => [`${val.toFixed(2)}%`, 'Uptime']}
+                            formatter={(val: any) => [`${Number(val).toFixed(2)}%`, 'Uptime']}
                         />
                         <Bar dataKey="uptime_percent" radius={[0, 4, 4, 0]}>
                             {chartData.map((entry, index) => (
