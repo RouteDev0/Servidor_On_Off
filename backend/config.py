@@ -59,7 +59,7 @@ class Settings(BaseSettings):
     DEFAULT_CODIGOCONJUNTODEOCORRENCIAS: int = 7
 
     # ── CORS ────────────────────────────────────────────────────────
-    CORS_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000"]
+    CORS_ORIGINS: list[str] = ["*"]
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 

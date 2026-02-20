@@ -8,7 +8,7 @@ import type {
 } from '../types';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:51235/api', // Adjust in production
+    baseURL: `http://${window.location.hostname}:51235/api`, // Adjust in production
     headers: {
         'Content-Type': 'application/json',
     },
