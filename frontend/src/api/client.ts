@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {
+import type {
     Empresa,
     Cliente,
     StatusGeral,
@@ -8,7 +8,7 @@ import {
 } from '../types';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:8000/api', // Adjust in production
+    baseURL: 'http://localhost:51235/api', // Adjust in production
     headers: {
         'Content-Type': 'application/json',
     },
