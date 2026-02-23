@@ -41,9 +41,7 @@ def loop_verificacao():
                 time.sleep(settings.INTERVALO_VERIFICACAO)
                 continue
 
-            print(
-                f"[INFO] Iniciando verificação de {len(dados_clientes)} clientes..."
-            )
+            print(f"[INFO] Iniciando verificação de {len(dados_clientes)} clientes...")
             tempo_inicio = time.time()
 
             # Processa cada cliente (em paralelo – limitado por MAX_WORKERS_CONDOMINIOS)
@@ -107,7 +105,10 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
-    allow_credentials=True,
+    # also allow any origin via regex (covers dynamic ports/IPs)
+    allow_origin_regex=r".*",
+    # disable credentials so wildcard origins can be used and headers are sent
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

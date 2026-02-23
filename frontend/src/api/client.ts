@@ -8,7 +8,8 @@ import type {
 } from '../types';
 
 const apiClient = axios.create({
-    baseURL: `http://${window.location.hostname}:51235/api`, // Adjust in production
+    // during development the backend runs on port 8000
+    baseURL: `http://${window.location.hostname}:8000/api`, // Adjust in production if needed
     headers: {
         'Content-Type': 'application/json',
     },

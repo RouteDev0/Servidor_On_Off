@@ -12,8 +12,10 @@ export const useEmpresas = () => {
             try {
                 setLoading(true);
                 const data = await api.getEmpresas();
-                setEmpresas(data);
+                // ensure we always store an array to avoid .map errors
+                setEmpresas(Array.isArray(data) ? data : []);
             } catch (err: any) {
+                console.error('Failed to fetch empresas', err);
                 setError(err);
             } finally {
                 setLoading(false);
