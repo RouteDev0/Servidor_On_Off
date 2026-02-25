@@ -24,7 +24,7 @@ export interface Cliente {
 
 export interface CameraStatus {
   nome: string;
-  status: 'ON' | 'OFF' | 'NO_CONFIG';
+  status: 'ON' | 'OFF' | 'NO_CONFIG' | 'SENHA_ERRADA';
 }
 
 export interface ClienteStatus {

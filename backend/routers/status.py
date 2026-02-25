@@ -45,7 +45,7 @@ def status_geral(
         ]
 
         n_online = sum(1 for c in cameras_status if c.status == "ON")
-        n_offline = sum(1 for c in cameras_status if c.status == "OFF")
+        n_offline = len(cameras_status) - n_online
 
         clientes_list.append(
             ClienteStatusSchema(

@@ -9,7 +9,7 @@ Adicionado: gravação de historico_eventos no banco quando há mudança de esta
 
 import time
 import concurrent.futures
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Union
 
 from backend.core.cache_manager import CacheManager
 from backend.core.config_manager import ConfigManager
@@ -51,7 +51,7 @@ class VerificationService:
 
     # ── Registro de eventos ─────────────────────────────────────────
 
-    def registrar_evento(self, uuid_camera: str | None, tipo_evento: str):
+    def registrar_evento(self, uuid_camera: Union[str, None], tipo_evento: str):
         """Enfileira evento para gravação posterior no banco."""
         if uuid_camera:
             self._pending_events.append(
@@ -159,6 +159,12 @@ class VerificationService:
                         timeout=settings.TIMEOUT_VERIFICACAO,
                     )
 
+                if resp.status_code == 401:
+                    ultima_exception = Exception("Senha Incorreta (401 Unauthorized)")
+                    online = False
+                    status_str = "SENHA_ERRADA"
+                    break
+
                 online = resp.status_code == 200 and resp.headers.get(
                     "Content-Type", ""
                 ).startswith("image")
@@ -173,11 +179,15 @@ class VerificationService:
                     time.sleep(backoff)
                 continue
 
-        if not online and ultima_exception:
-            print(f"[ERRO] {nome}: {ultima_exception}")
-
-        status_str = "ON" if online else "OFF"
-        print(f"📷 {nome} está {status_str}")
+        if 'status_str' not in locals():
+            status_str = "ON" if online else "OFF"
+            
+        if status_str == "SENHA_ERRADA":
+            print(f"[⚠️] {nome}: Senha incorreta (401 Unauthorized)")
+        else:
+            if not online and ultima_exception:
+                print(f"[ERRO] {nome}: {ultima_exception}")
+            print(f"📷 {nome} está {status_str}")
 
         self.cache_manager.set_cached_result(chave_cache, online)
 
@@ -284,6 +294,12 @@ class VerificationService:
 
                 online = resp.status_code == 200 and content_type_ok and size_ok
 
+                if resp.status_code == 401:
+                    ultima_exception = Exception("Senha Incorreta (401 Unauthorized)")
+                    online = False
+                    status_str = "SENHA_ERRADA"
+                    break
+
                 if online:
                     break
                 elif resp.status_code == 200 and content_type_ok and not size_ok:
@@ -299,15 +315,19 @@ class VerificationService:
                     time.sleep(backoff)
                 continue
 
-        if not online and ultima_exception:
-            print(f"[ERRO] {nome} [Intelbras]: {ultima_exception}")
-        elif not online and content_length > 0:
-            print(
-                f"[INFO] {nome} [Intelbras]: Offline ou sem sinal ({content_length} bytes)"
-            )
+        if 'status_str' not in locals():
+            status_str = "ON" if online else "OFF"
 
-        status_str = "ON" if online else "OFF"
-        print(f"📷 {nome} está {status_str} [Intelbras CGI]")
+        if status_str == "SENHA_ERRADA":
+            print(f"[⚠️] {nome} [Intelbras]: Senha incorreta (401 Unauthorized)")
+        else:
+            if not online and ultima_exception:
+                print(f"[ERRO] {nome} [Intelbras]: {ultima_exception}")
+            elif not online and content_length > 0:
+                print(
+                    f"[INFO] {nome} [Intelbras]: Offline ou sem sinal ({content_length} bytes)"
+                )
+            print(f"📷 {nome} está {status_str} [Intelbras CGI]")
 
         self.cache_manager.set_cached_result(chave_cache, online)
 

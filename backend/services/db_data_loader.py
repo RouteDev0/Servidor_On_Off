@@ -5,7 +5,7 @@ Faz um JOIN entre empresa → clientes → dispositivos → pontos_monitoramento
 e agrupa os dados em memória no mesmo formato dict que o serviço de verificação espera.
 """
 
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Union
 from sqlalchemy.orm import Session
 from backend.models import Empresa, Cliente, Dispositivo, PontoMonitoramento
 from backend.config import get_settings
@@ -14,7 +14,7 @@ from backend.config import get_settings
 settings = get_settings()
 
 
-def _marca_to_protocol(marca: str | None) -> str:
+def _marca_to_protocol(marca: Union[str, None]) -> str:
     """Converte a marca do dispositivo para o protocolo de verificação."""
     if not marca:
         return settings.DEFAULT_PROTOCOL
@@ -24,7 +24,7 @@ def _marca_to_protocol(marca: str | None) -> str:
     return "hikvision"
 
 
-def _canal_fisico_to_channel(canal_fisico: int | None, protocol: str) -> str:
+def _canal_fisico_to_channel(canal_fisico: Union[int, None], protocol: str) -> str:
     """
     Converte canal_fisico (int) para o formato de canal esperado pelo protocolo.
 
@@ -161,7 +161,7 @@ def carregar_dados_do_banco(db: Session) -> Dict[str, Dict[str, Any]]:
     return clientes_dict
 
 
-def carregar_dados_por_empresa(db: Session, empresa_id: int | None = None) -> Dict[str, Dict[str, Any]]:
+def carregar_dados_por_empresa(db: Session, empresa_id: Union[int, None] = None) -> Dict[str, Dict[str, Any]]:
     """
     Mesma lógica de carregar_dados_do_banco, mas com filtro opcional por empresa.
     """

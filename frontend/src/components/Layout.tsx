@@ -1,86 +1,90 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-import { Camera, LayoutDashboard, BarChart3 } from 'lucide-react';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { Bell, Mail, Settings } from 'lucide-react';
 import { EmpresaSelector } from './EmpresaSelector';
 
 export const Layout: React.FC = () => {
+    const location = useLocation();
+
     return (
-        <div style={{ display: 'flex', width: '100%', minHeight: '100vh' }}>
-            {/* Sidebar */}
-            <aside className="glass-panel" style={{
-                width: 'var(--sidebar-width)',
-                borderRadius: 0,
-                borderRight: 'var(--glass-border)',
+        <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100vh', background: '#0a0a0a', overflow: 'hidden' }}>
+            {/* Top Header */}
+            <header style={{
+                height: '64px',
+                minHeight: '64px',
+                borderBottom: '1px solid rgba(255,255,255,0.05)',
                 display: 'flex',
-                flexDirection: 'column',
-                padding: '24px 0'
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                padding: '0 24px',
+                background: '#111',
+                zIndex: 10
             }}>
-                <div style={{ padding: '0 24px', marginBottom: '48px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <div style={{ background: 'var(--accent-primary)', padding: '8px', borderRadius: '12px' }}>
-                        <Camera size={24} color="#fff" />
+                <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
+                    {/* Logo Approximation */}
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', fontSize: '22px', fontWeight: 800, letterSpacing: '1px', color: '#fff' }}>
+                                R
+                                <svg width="22" height="22" viewBox="0 0 100 100" style={{ margin: '0 2px' }}>
+                                    {/* Tail notch effect simulated with an inner overlapping element or carefully crafted path */}
+                                    <path d="M 50 15 A 35 35 0 1 1 15 50 L 32 50 A 18 18 0 1 0 50 32 Z" fill="#facc15" />
+                                    <polygon points="50,0 80,22.5 50,45" fill="#facc15" />
+                                </svg>
+                                UTE
+                            </div>
+                            <span style={{ fontSize: '9px', color: '#888', letterSpacing: '3px', textTransform: 'uppercase', marginTop: '2px' }}>
+                                security
+                            </span>
+                        </div>
+                        <div style={{ color: '#aaa', fontSize: '16px', marginLeft: '24px', borderLeft: '1px solid #333', paddingLeft: '24px' }}>
+                            Security
+                        </div>
                     </div>
-                    <h2 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 700, letterSpacing: '-0.05em' }}>
-                        MoniCam
-                    </h2>
+
+                    {/* Top Navigation */}
+                    <nav style={{ display: 'flex', gap: '24px', marginLeft: '16px' }}>
+                        <NavLink to="/" style={{ 
+                            color: location.pathname === '/' ? '#fff' : '#666', 
+                            textDecoration: 'none', 
+                            fontSize: '14px', 
+                            fontWeight: 500,
+                            padding: '22px 0',
+                            borderBottom: location.pathname === '/' ? '2px solid #facc15' : '2px solid transparent',
+                            transition: 'all 0.2s'
+                        }}>Dashboard</NavLink>
+                        
+                        <NavLink to="/reports" style={{ 
+                            color: location.pathname.includes('/reports') ? '#fff' : '#666', 
+                            textDecoration: 'none', 
+                            fontSize: '14px', 
+                            fontWeight: 500,
+                            padding: '22px 0',
+                            borderBottom: location.pathname.includes('/reports') ? '2px solid #facc15' : '2px solid transparent',
+                            transition: 'all 0.2s'
+                        }}>Relatórios</NavLink>
+                    </nav>
                 </div>
-
-                <nav style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '0 16px' }}>
-                    <NavLink
-                        to="/"
-                        style={({ isActive }) => ({
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '12px',
-                            padding: '12px 16px',
-                            borderRadius: '12px',
-                            color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)',
-                            background: isActive ? 'rgba(255,255,255,0.1)' : 'transparent',
-                            fontWeight: isActive ? 600 : 500,
-                            transition: 'all 0.2s'
-                        })}
-                    >
-                        <LayoutDashboard size={20} />
-                        Dashboard
-                    </NavLink>
-                    <NavLink
-                        to="/reports"
-                        style={({ isActive }) => ({
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '12px',
-                            padding: '12px 16px',
-                            borderRadius: '12px',
-                            color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)',
-                            background: isActive ? 'rgba(255,255,255,0.1)' : 'transparent',
-                            fontWeight: isActive ? 600 : 500,
-                            transition: 'all 0.2s'
-                        })}
-                    >
-                        <BarChart3 size={20} />
-                        Relatórios
-                    </NavLink>
-                </nav>
-            </aside>
-
-            {/* Main Content */}
-            <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                {/* Header */}
-                <header className="glass-panel" style={{
-                    height: 'var(--header-height)',
-                    borderRadius: 0,
-                    borderBottom: 'var(--glass-border)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'flex-end',
-                    padding: '0 32px'
-                }}>
+                
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: '#888' }}>
                     <EmpresaSelector />
-                </header>
-
-                {/* Page Content */}
-                <div className="animate-fade-in" style={{ padding: '32px', flex: 1, overflowY: 'auto' }}>
-                    <Outlet />
+                    <div style={{ height: '24px', width: '1px', background: '#333', margin: '0 8px' }} />
+                    <Bell size={18} style={{ cursor: 'pointer', transition: 'color 0.2s' }} className="hover-white" />
+                    <Mail size={18} style={{ cursor: 'pointer', transition: 'color 0.2s' }} className="hover-white" />
+                    <Settings size={18} style={{ cursor: 'pointer', transition: 'color 0.2s' }} className="hover-white" />
+                    <div style={{ 
+                        background: '#facc15', color: '#000', width: '32px', height: '32px', 
+                        borderRadius: '50%', display: 'flex', alignItems: 'center', 
+                        justifyContent: 'center', fontWeight: 'bold', marginLeft: '8px', cursor: 'pointer'
+                    }}>
+                        A
+                    </div>
                 </div>
+            </header>
+
+            {/* Page Content */}
+            <main style={{ flex: 1, display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden' }}>
+                <Outlet />
             </main>
         </div>
     );

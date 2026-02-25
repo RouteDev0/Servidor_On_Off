@@ -24,20 +24,20 @@ class Settings(BaseSettings):
         )
 
     # ── Verificação de câmeras ──────────────────────────────────────
-    TIMEOUT_VERIFICACAO: int = 12          # segundos
+    TIMEOUT_VERIFICACAO: int = 8          # segundos
     TENTATIVAS_RETRY: int = 2
     RETRY_BACKOFF: float = 1.0             # segundos
     INTERVALO_VERIFICACAO: int = 600       # segundos entre ciclos
 
     # Workers
-    MAX_WORKERS_CAMERAS: int = 10
-    MAX_WORKERS_CONDOMINIOS: int = 8
-    DELAY_ENTRE_CAMERAS: float = 0.1
+    MAX_WORKERS_CAMERAS: int = 50
+    MAX_WORKERS_CONDOMINIOS: int = 20
+    DELAY_ENTRE_CAMERAS: float = 0.0
 
     # Pool de conexões HTTP
     USE_CONNECTION_POOL: bool = True
-    CONNECTION_POOL_SIZE: int = 50
-    CONNECTION_POOL_MAXSIZE: int = 50
+    CONNECTION_POOL_SIZE: int = 200
+    CONNECTION_POOL_MAXSIZE: int = 200
 
     # Cache
     CACHE_DURATION: int = 30               # ON = 30s
@@ -63,7 +63,7 @@ class Settings(BaseSettings):
     # ── CORS ────────────────────────────────────────────────────────
     CORS_ORIGINS: list[str] = ["*"]
 
-    model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
+    model_config = {"env_file": (".env", "../.env"), "env_file_encoding": "utf-8", "extra": "ignore"}
 
 
 @lru_cache

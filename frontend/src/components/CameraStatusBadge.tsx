@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface Props {
-    status: 'ON' | 'OFF' | 'NO_CONFIG';
+    status: 'ON' | 'OFF' | 'NO_CONFIG' | 'SENHA_ERRADA';
 }
 
 export const CameraStatusBadge: React.FC<Props> = ({ status }) => {
@@ -19,6 +19,10 @@ export const CameraStatusBadge: React.FC<Props> = ({ status }) => {
         label = 'Offline';
         animationClass = 'animate-pulse';
         bgClass = 'rgba(239, 68, 68, 0.2)';
+    } else if (status === 'SENHA_ERRADA') {
+        color = '#f59e0b'; // amber-500
+        label = 'Senha Incorreta';
+        bgClass = 'rgba(245, 158, 11, 0.2)';
     }
 
     return (

@@ -108,3 +108,15 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #333;
 }
+
+.hover-white:hover {
+  color: #fff !important;
+}
+
+.hover-brightness:hover {
+  filter: brightness(1.2);
+}
+
+.hover-bg-surface:hover {
+  background: var(--bg-surface) !important;
+}

@@ -29,8 +29,9 @@ export const api = {
     },
 
     getStatus: async (empresa_id?: number): Promise<StatusGeral> => {
-        const url = empresa_id ? `/status/${empresa_id}` : '/status';
-        const { data } = await apiClient.get(url);
+        const { data } = await apiClient.get('/status', {
+            params: { empresa_id }
+        });
         return data;
     },
 
