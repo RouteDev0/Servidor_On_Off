@@ -6,9 +6,7 @@ import threading
 import concurrent.futures
 
 from app.config import Config
-from app.utils.file_utils import FileUtils
 from app.services.verification_service import VerificationService
-from app.services.condominio_service import CondominioService
 
 app = Flask(
     __name__, template_folder=Config.TEMPLATES_DIR, static_folder=Config.STATIC_DIR
@@ -19,7 +17,6 @@ app.permanent_session_lifetime = timedelta(minutes=Config.PERMANENT_SESSION_LIFE
 USUARIO = Config.USUARIO
 SENHA = Config.SENHA
 verification_service = VerificationService()
-condominio_service = CondominioService(verification_service)
 
 
 def login_obrigatorio(f):
@@ -54,32 +51,43 @@ def logout():
     return redirect(url_for("login"))
 
 
+def processar_condominio_db(cliente_nome, data):
+    try:
+        config_global = data.get("metadata", {})
+        cameras = data.get("cameras", [])
+        verification_service.verificar_cameras(cameras, cliente_nome, config_global)
+        return True
+    except Exception as e:
+        print(f"[ERRO] Falha ao processar {cliente_nome}: {e}")
+        return False
+
+
 def loop_verificacao():
-    pasta_condominios = condominio_service.obter_pasta_condominios()
+    from app.core.database import get_alert_devices
     while True:
         try:
-            arquivos = FileUtils.listar_arquivos_json(pasta_condominios)
-            if not arquivos:
-                print("[AVISO] Nenhum arquivo JSON encontrado na pasta 'condominios'.")
+            clientes_data = get_alert_devices()
+            if not clientes_data:
+                print("[AVISO] Nenhum dispositivo para alerta encontrado no banco de dados.")
                 time.sleep(Config.INTERVALO_VERIFICACAO)
                 continue
 
-            print(f"[INFO] Iniciando verificação de {len(arquivos)} condomínios...")
+            print(f"[INFO] Iniciando verificação de {len(clientes_data)} condomínios (DB)...")
             tempo_inicio = time.time()
 
             max_workers = (
-                min(len(arquivos), getattr(Config, "MAX_WORKERS_CONDOMINIOS", 3)) or 1
+                min(len(clientes_data), getattr(Config, "MAX_WORKERS_CONDOMINIOS", 3)) or 1
             )
             with concurrent.futures.ThreadPoolExecutor(
                 max_workers=max_workers
             ) as executor:
                 futures = [
                     executor.submit(
-                        condominio_service.processar_condominio,
-                        arquivo,
-                        pasta_condominios,
+                        processar_condominio_db,
+                        cliente_nome,
+                        data,
                     )
-                    for arquivo in arquivos
+                    for cliente_nome, data in clientes_data
                 ]
                 for future in concurrent.futures.as_completed(futures):
                     try:
@@ -91,10 +99,9 @@ def loop_verificacao():
             print(f"[INFO] Verificação concluída em {tempo_total:.2f} segundos")
         except Exception as e:
             print(
-                f"[ERRO CRÍTICO] Ocorreu um erro inesperado no loop de verificação: {e}"
+                f"[ERRO CRÍTICO] Ocorreu um erro inesperado no loop de verificação DB: {e}"
             )
         time.sleep(Config.INTERVALO_VERIFICACAO)
-
 
 threading.Thread(target=loop_verificacao, daemon=True).start()
 
@@ -108,9 +115,8 @@ def index():
 @app.route("/condominio/<condominio>")
 @login_obrigatorio
 def condominio_page(condominio):
-    from app.utils.file_utils import FileUtils
-
-    nome_condominio = FileUtils.nome_condominio_por_arquivo(condominio)
+    # Em uma estrutura de banco de dados, você deve consultar o banco para obter os dados do "condominio" (Cliente)
+    nome_condominio = condominio  # Simplificação para este caso limpo
     return render_template(
         "condominio.html", nome_condominio=nome_condominio, condominio=condominio
     )

@@ -71,11 +71,11 @@ function getSeverity(offPercent) {
   return 'ok';
 }
 
-function getOfflineColor(off) {
-  if (off >= 15) return 'red';
-  if (off >= 8) return 'orange';
-  if (off >= 4) return 'yellow';
-  if (off > 0) return 'green';
+function getOfflineColor(offPercent) {
+  if (offPercent >= 50) return 'red';
+  if (offPercent >= 25) return 'orange';
+  if (offPercent >= 10) return 'yellow';
+  if (offPercent > 0) return 'green';
   return 'gray';
 }
 
@@ -86,22 +86,26 @@ function sortCondominios(entries, sortType) {
     const camerasB = dataB.cameras || dataB;
     const offA = camerasA.filter(c => c.status === 'OFF').length;
     const offB = camerasB.filter(c => c.status === 'OFF').length;
+    const pctA = camerasA.length > 0 ? (offA / camerasA.length) * 100 : 0;
+    const pctB = camerasB.length > 0 ? (offB / camerasB.length) * 100 : 0;
 
     if (sortType === 'alpha') {
       return nameA.localeCompare(nameB);
     }
 
     if (sortType === 'percent') {
-      // Sort by offline percentage (descending)
-      const pctA = camerasA.length > 0 ? (camerasA.filter(c => c.status === 'OFF').length / camerasA.length) : 0;
-      const pctB = camerasB.length > 0 ? (camerasB.filter(c => c.status === 'OFF').length / camerasB.length) : 0;
-      return pctB - pctA;
+      // Sort by offline percentage (descending), then alphabetical
+      if (pctA !== pctB) return pctB - pctA;
+      return nameA.localeCompare(nameB);
     }
 
-    // Default: most offline first
+    // Default: most offline first, then by %, then alphabetical
     if (offA > 0 && offB === 0) return -1;
     if (offA === 0 && offB > 0) return 1;
-    if (offA > 0 && offB > 0) return offB - offA;
+    if (offA > 0 && offB > 0) {
+      if (pctA !== pctB) return pctB - pctA;
+      return nameA.localeCompare(nameB);
+    }
     return nameA.localeCompare(nameB);
   });
 }
@@ -152,7 +156,7 @@ function renderizarCondominios() {
     const percentOfflineStr = offPercent.toFixed(1);
 
     const severity = getSeverity(offPercent);
-    const offColor = getOfflineColor(off);
+    const offColor = getOfflineColor(offPercent);
 
     const card = document.createElement('div');
     card.className = `site-card severity-${severity}`;

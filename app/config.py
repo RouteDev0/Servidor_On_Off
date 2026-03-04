@@ -16,7 +16,7 @@ class Config:
 
     # Configurações do servidor
     HOST = "0.0.0.0"
-    PORT = 8080
+    PORT = 8081
     DEBUG = False
 
     # Configurações de verificação de câmeras
@@ -50,7 +50,7 @@ class Config:
     INTELBRAS_TRACK_IMAGE_SIZE = True  # Rastreia mudanças no Content-Length entre capturas
 
     # Configurações de API
-    API_URL = "http://192.168.2.50:55554/ExecutarComando"
+    API_URL = "http://192.168.2.50:55554/"
     # "http://192.168.2.50:5554/ExecutarComando"
     API_USERNAME = "moni"
     # API_PASSWORD = "moni"
@@ -59,7 +59,6 @@ class Config:
     # Caminhos dos arquivos (BASE_DIR = raiz do projeto)
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     APP_DIR = os.path.join(BASE_DIR, "app")
-    CONDOMINIOS_DIR = os.path.join(APP_DIR, "data", "condominios")
     WEB_DIR = os.path.join(BASE_DIR, "web")
     TEMPLATES_DIR = os.path.join(WEB_DIR, "templates")
     STATIC_DIR = os.path.join(WEB_DIR, "static")
